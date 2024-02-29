@@ -10,7 +10,7 @@
 
     sessionVariables = {
       EDITOR = "nvim";
-      PAGER = "moar";
+      PAGER = "moar -quit-if-one-screen";
     };
 
     packages = with pkgs; [
