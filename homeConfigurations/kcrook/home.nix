@@ -3,58 +3,10 @@
     username = "kcrook";
     homeDirectory = "/home/kcrook";
     stateVersion = "23.11";
-
-    sessionVariables = {
-      EDITOR = "nvim";
-      PAGER = "moar -quit-if-one-screen";
-    };
-
-    packages = with pkgs; [
-      alejandra
-      chatgpt-cli
-      cifs-utils
-      curl
-      difftastic
-      duf
-      efibootmgr
-      eza
-      file
-      gping
-      gptfdisk
-      grc
-      lrzip
-      moar
-      mtr
-      nethack
-      nfs-utils
-      nixfmt
-      nixpkgs-fmt
-      nix-output-monitor
-      p7zip
-      pciutils
-      procs
-      psmisc
-      rsync
-      spotify-player
-      tealdeer
-      usbutils
-      vifm
-      wget
-      zsh-powerlevel10k
-    ];
   };
 
   programs = {
     home-manager.enable = true;
-    bash.enable = true;
-    bat.enable = true;
-    direnv.enable = true;
-    direnv.nix-direnv.enable = true;
-    htop.enable = true;
-    jq.enable = true;
-    ripgrep.enable = true;
-    ssh.enable = true;
-    yt-dlp.enable = true;
 
     git = {
       enable = true;

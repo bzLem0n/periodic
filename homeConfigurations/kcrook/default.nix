@@ -3,5 +3,6 @@
   modules = [
     ./home.nix
     inputs.self.homeModules.zsh
+    inputs.self.homeModules.shell
   ];
 }
