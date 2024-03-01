@@ -6,5 +6,6 @@
     inputs.self.homeModules.zsh
     inputs.self.homeModules.tmux
     inputs.self.homeModules.neovim
+    inputs.self.homeModules.git
   ];
 }
