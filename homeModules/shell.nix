@@ -15,6 +15,7 @@
       efibootmgr
       eza
       file
+      glow
       gping
       gptfdisk
       grc
