@@ -111,6 +111,7 @@
       shortcut = "b";
       terminal = "screen-256color";
     };
+
     zsh = {
       enable = true;
       autocd = true;
@@ -127,6 +128,9 @@
         source ~/.nix-profile/share/zsh-powerlevel10k/powerlevel10k.zsh-theme
         [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
       '';
+      sessionVariables = {
+        LIBVIRT_DEFAULT_URI = "qemu:///system";
+      };
       oh-my-zsh = {
         enable = true;
         plugins = [ "colored-man-pages" "git" "sudo" "tmux" "direnv" "history" ];
