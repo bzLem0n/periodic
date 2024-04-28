@@ -13,7 +13,7 @@
     };
   };
 
-  outputs = { flakelight, home-manager, ... } @ inputs:
+  outputs = { flakelight, home-manager, ... }@inputs:
     flakelight ./. {
       inherit inputs;
 
