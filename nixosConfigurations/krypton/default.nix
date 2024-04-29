@@ -3,6 +3,7 @@
   modules = [
     ./configuration.nix
     inputs.self.nixosModules.network
+    inputs.self.nixosModules.intelgpu
   ];
 }
 
