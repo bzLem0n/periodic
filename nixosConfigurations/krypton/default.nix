@@ -6,6 +6,7 @@
     inputs.self.nixosModules.intelgpu
     inputs.self.nixosModules.libvirt
     inputs.self.nixosModules.network
+    inputs.self.nixosModules.podman
   ];
 }
 
