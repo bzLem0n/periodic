@@ -1,5 +1,5 @@
 { config, pkgs, lib, ... }: {
-  home = { packages = with pkgs; [ zsh-powerlevel10k ]; };
+  home.packages = with pkgs; [ zsh-powerlevel10k ];
 
   programs.zsh = {
     enable = true;
@@ -8,19 +8,23 @@
     enableCompletion = true;
     enableVteIntegration = true;
     syntaxHighlighting.enable = true;
+
     history = {
       size = 100000;
       save = 100000;
       path = "${config.xdg.dataHome}/.zsh_history";
     };
+
     initExtra = ''
       source ~/.nix-profile/share/zsh-powerlevel10k/powerlevel10k.zsh-theme
       [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
     '';
+
     oh-my-zsh = {
       enable = true;
       plugins = [ "colored-man-pages" "git" "sudo" "tmux" "direnv" "history" ];
     };
+
     shellAliases = {
       cat = "bat";
       df =

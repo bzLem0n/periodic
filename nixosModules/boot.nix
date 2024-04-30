@@ -1,6 +1,9 @@
 { config, pkgs, lib, ... }: {
+  console = { earlySetup = true; };
+
   boot = {
     blacklistedKernelModules = [ "snd_pcsp" ];
+    plymouth.enable = true;
 
     kernelParams = [
       "quiet"
@@ -9,9 +12,5 @@
       "rd.udev.log_priority=3"
       "vt.global_cursor_default=0"
     ];
-
-    plymouth = { enable = true; };
   };
-
-  console = { earlySetup = true; };
 }
