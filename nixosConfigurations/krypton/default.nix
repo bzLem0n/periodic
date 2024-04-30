@@ -3,6 +3,7 @@
   modules = [
     ./configuration.nix
     inputs.self.nixosModules.boot
+    inputs.self.nixosModules.common
     inputs.self.nixosModules.intelgpu
     inputs.self.nixosModules.libvirt
     inputs.self.nixosModules.network

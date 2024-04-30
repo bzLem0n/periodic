@@ -1,10 +1,7 @@
 { inputs, config, lib, pkgs, ... }:
 
 {
-  imports = [
-    ./hardware-configuration.nix
-    inputs.home-manager.nixosModules.home-manager
-  ];
+  imports = [ ./hardware-configuration.nix ];
 
   boot = {
     loader.grub = {
@@ -44,27 +41,6 @@
 
   sound.enable = true;
   hardware.pulseaudio.enable = true;
-
-  users.users.kcrook = {
-    isNormalUser = true;
-    extraGroups = [ "wheel" ];
-    packages = with pkgs; [ firefox ];
-    shell = pkgs.zsh;
-  };
-
-  home-manager = {
-    useGlobalPkgs = true;
-    users.kcrook = {
-      imports = [
-        ../../homeConfigurations/kcrook/home.nix
-        inputs.self.homeModules.shell
-        inputs.self.homeModules.zsh
-        inputs.self.homeModules.tmux
-        inputs.self.homeModules.neovim
-        inputs.self.homeModules.git
-      ];
-    };
-  };
 
   environment.systemPackages = with pkgs; [ wget ];
 
