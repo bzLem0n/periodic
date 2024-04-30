@@ -3,6 +3,7 @@
 
   modules = [
     ./configuration.nix
+    ./hardware-configuration.nix
     inputs.self.nixosModules.boot
     inputs.self.nixosModules.common
     inputs.self.nixosModules.desktop
@@ -12,4 +13,3 @@
     inputs.self.nixosModules.podman
   ];
 }
-
