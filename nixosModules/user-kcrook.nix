@@ -15,6 +15,8 @@
     };
   };
 
+  programs.zsh.enable = true;
+
   users.users.kcrook = {
     isNormalUser = true;
     description = "Kevin Crook";

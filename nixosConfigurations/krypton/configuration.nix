@@ -21,29 +21,6 @@
     networkmanager.enable = true;
   };
 
-  time.timeZone = "America/Regina";
-
-  services.displayManager.sddm.enable = true;
-
-  services.libinput.enable = true;
-
-  services.xserver = {
-    enable = true;
-    desktopManager.plasma5.enable = true;
-  };
-
-  sound.enable = true;
-  hardware.pulseaudio.enable = true;
-
-  environment.systemPackages = with pkgs; [ wget ];
-
-  programs = {
-    git.enable = true;
-    zsh.enable = true;
-  };
-
-  services.openssh.enable = true;
-
   system.stateVersion = "23.11";
 }
 
