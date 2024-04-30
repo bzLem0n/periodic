@@ -2,6 +2,7 @@
   networking = {
     domain = "lem0n.zapto.org";
     timeServers = [ "timelord.uregina.ca" ];
+
     hosts = {
       "192.168.1.21" = [ "scandium" "scandium.lem0n.zapto.org" ];
       "192.168.1.30" = [ "zinc" "zinc.lem0n.zapto.org" ];
@@ -15,6 +16,7 @@
       "192.168.1.223" = [ "legrand" "legrand.lem0n.zapto.org" ];
     };
   };
+
   services = {
     ntp.enable = true;
     openssh.enable = true;

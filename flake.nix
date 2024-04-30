@@ -3,10 +3,12 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs";
+
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
     flakelight = {
       url = "github:nix-community/flakelight";
       inputs.nixpkgs.follows = "nixpkgs";

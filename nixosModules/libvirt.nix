@@ -2,6 +2,7 @@
   environment = {
     systemPackages = [ pkgs.OVMF pkgs.qemu pkgs.swtpm pkgs.usbutils ];
   };
+
   virtualisation = {
     libvirtd = {
       allowedBridges = [ "br0" ];
@@ -9,5 +10,4 @@
       qemu.swtpm.enable = true;
     };
   };
-
 }

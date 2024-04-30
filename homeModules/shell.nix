@@ -7,7 +7,6 @@
 
     packages = with pkgs; [
       alejandra
-      chatgpt-cli
       cifs-utils
       curl
       difftastic

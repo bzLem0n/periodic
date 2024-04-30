@@ -1,6 +1,4 @@
-{ inputs, config, lib, pkgs, ... }:
-
-{
+{ inputs, config, lib, pkgs, ... }: {
   imports = [ ./hardware-configuration.nix ];
 
   boot = {
@@ -25,11 +23,6 @@
 
   time.timeZone = "America/Regina";
 
-  nix = {
-    package = pkgs.nix;
-    settings.experimental-features = [ "nix-command" "flakes" ];
-  };
-
   services.displayManager.sddm.enable = true;
 
   services.libinput.enable = true;
@@ -46,18 +39,11 @@
 
   programs = {
     git.enable = true;
-    neovim = {
-      enable = true;
-      defaultEditor = true;
-      viAlias = true;
-      vimAlias = true;
-    };
     zsh.enable = true;
   };
 
   services.openssh.enable = true;
 
   system.stateVersion = "23.11";
-
 }
 
