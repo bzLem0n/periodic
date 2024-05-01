@@ -1,7 +1,7 @@
 { config, pkgs, lib, ... }: {
   nixpkgs.config.allowUnfree = true;
 
-  environment = { systemPackages = [ pkgs.cachix pkgs.nix-output-monitor ]; };
+  environment.systemPackages = [ pkgs.cachix pkgs.nix-output-monitor ];
 
   nix = {
     settings.experimental-features = [ "nix-command" "flakes" ];

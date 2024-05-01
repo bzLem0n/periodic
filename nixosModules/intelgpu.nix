@@ -1,5 +1,5 @@
 { config, pkgs, lib, ... }: {
-  boot = { initrd = { availableKernelModules = [ "i915" ]; }; };
+  boot.initrd.availableKernelModules = [ "i915" ];
 
   hardware = {
     opengl = {

@@ -1,5 +1,1 @@
-{ config, pkgs, lib, ... }: {
-  boot = {
-    blacklistedKernelModules = [ "snd_pcsp" ];
-  };
-}
+{ config, pkgs, lib, ... }: { boot.blacklistedKernelModules = [ "snd_pcsp" ]; }

@@ -23,5 +23,6 @@
     extraGroups =
       [ "adbusers" "docker" "libvirtd" "networkmanager" "pipewire" "wheel" ];
     shell = pkgs.zsh;
+    initialPassword = "changeme";
   };
 }

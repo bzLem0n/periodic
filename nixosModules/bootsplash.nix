@@ -1,5 +1,5 @@
 { config, pkgs, lib, ... }: {
-  console = { earlySetup = true; };
+  console.earlySetup = true;
 
   boot = {
     plymouth.enable = true;

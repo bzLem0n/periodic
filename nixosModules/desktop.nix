@@ -48,14 +48,12 @@
 
   nixpkgs.config.permittedInsecurePackages = [ "imagemagick-6.9.12-68" ];
 
-  fonts = {
-    packages = with pkgs; [
-      liberation_ttf
-      (nerdfonts.override {
-        fonts = [ "FiraCode" "JetBrainsMono" "LiberationMono" "OpenDyslexic" ];
-      })
-    ];
-  };
+  fonts.packages = with pkgs; [
+    liberation_ttf
+    (nerdfonts.override {
+      fonts = [ "FiraCode" "JetBrainsMono" "LiberationMono" "OpenDyslexic" ];
+    })
+  ];
 
   hardware = {
     bluetooth.enable = true;
