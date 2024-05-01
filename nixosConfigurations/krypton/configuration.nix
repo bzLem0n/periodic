@@ -1,6 +1,8 @@
 { inputs, config, lib, pkgs, ... }: {
   boot = {
+    supportedFilesystems = [ "zfs" ];
     initrd.secrets = { "/zssd.key" = /zssd.key; };
+
     loader.grub = {
       enable = true;
       efiSupport = true;
@@ -10,15 +12,22 @@
         path = "/boot-fallback";
       }];
     };
-    supportedFilesystems = [ "zfs" ];
   };
 
   networking = {
     hostName = "krypton";
     hostId = "158b2654";
     firewall.enable = false;
-    networkmanager.enable = true;
+    bridges.br0.interfaces = [ "enp1s0" ];
+    interfaces.br0.useDHCP = true;
+    useDHCP = false;
   };
+
+  services.zfs.autoScrub.enable = true;
+
+  powerManagement.cpuFreqGovernor = "ondemand";
+
+  virtualisation.podman.extraPackages = [ pkgs.zfs ];
 
   system.stateVersion = "23.11";
 }
