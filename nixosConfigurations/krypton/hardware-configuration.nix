@@ -47,6 +47,11 @@
     fsType = "zfs";
   };
 
+  fileSystems."/var/lib/libvirt" = {
+    device = "zssd/SYSTEM/NIXOS/var/lib/libvirt";
+    fsType = "zfs";
+  };
+
   fileSystems."/var/log" = {
     device = "zssd/SYSTEM/NIXOS/var/log";
     fsType = "zfs";
