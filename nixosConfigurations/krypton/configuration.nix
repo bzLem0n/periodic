@@ -1,5 +1,6 @@
 { inputs, config, lib, pkgs, ... }: {
   boot = {
+    initrd.secrets = { "/zssd.key" = /zssd.key; };
     loader.grub = {
       enable = true;
       efiSupport = true;
