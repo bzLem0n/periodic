@@ -48,7 +48,7 @@
   };
 
   fileSystems."/var/lib/libvirt" = {
-    device = "zssd/SYSTEM/NIXOS/var/lib/libvirt";
+    device = "zssd/SYSTEM/NIXOS/var/libvirt";
     fsType = "zfs";
   };
 
