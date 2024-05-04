@@ -13,9 +13,14 @@
       url = "github:nix-community/flakelight";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    peerix = {
+      url = "github:cid-chan/peerix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { flakelight, home-manager, ... }@inputs:
+  outputs = { flakelight, home-manager, peerix, ... }@inputs:
     flakelight ./. {
       inherit inputs;
 
