@@ -1,6 +1,7 @@
 # nix build output
 result
 result-*
+secrets
 
 # direnv cache link
 .direnv
