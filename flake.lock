@@ -1,5 +1,36 @@
 {
   "nodes": {
+    "flake-compat": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1627913399,
+        "narHash": "sha256-hY8g6H2KFL8ownSiFeMOjwPC8P0ueXpCVEbxgda3pko=",
+        "owner": "edolstra",
+        "repo": "flake-compat",
+        "rev": "12c64ca55c1014cdc1b16ed5a804aa8576601ff2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "edolstra",
+        "repo": "flake-compat",
+        "type": "github"
+      }
+    },
+    "flake-utils": {
+      "locked": {
+        "lastModified": 1634851050,
+        "narHash": "sha256-N83GlSGPJJdcqhUxSCS/WwW5pksYf3VP1M13cDRTSVA=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "c91f3de5adaf1de973b797ef7485e441a65b8935",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
     "flakelight": {
       "inputs": {
         "nixpkgs": [
@@ -27,11 +58,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1714515075,
-        "narHash": "sha256-azMK7aWH0eUc3IqU4Fg5rwZdB9WZBvimOGG3piqvtsY=",
+        "lastModified": 1714679908,
+        "narHash": "sha256-KzcXzDvDJjX34en8f3Zimm396x6idbt+cu4tWDVS2FI=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "6d3b6dc9222c12b951169becdf4b0592ee9576ef",
+        "rev": "9036fe9ef8e15a819fa76f47a8b1f287903fb848",
         "type": "github"
       },
       "original": {
@@ -42,11 +73,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1714529279,
-        "narHash": "sha256-EILgRXfIcpw7p9NYIjb41DvwvXuzh4IFUmRLcG9hLjk=",
+        "lastModified": 1714797179,
+        "narHash": "sha256-q+f3BLpqUBo7ze2Cwd3ZySMTTdnMA4uO0HtukdqZb0s=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "11f06f0d582f9082cf3db156b85e5d2064d977a9",
+        "rev": "a05b3362454424611b99647a157c32d66007a7f4",
         "type": "github"
       },
       "original": {
@@ -55,11 +86,34 @@
         "type": "github"
       }
     },
+    "peerix": {
+      "inputs": {
+        "flake-compat": "flake-compat",
+        "flake-utils": "flake-utils",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1661429880,
+        "narHash": "sha256-7/m468XZW82O7KhDtRdQ7RnPsh83+tA8N4U0FncFo1U=",
+        "owner": "cid-chan",
+        "repo": "peerix",
+        "rev": "32cd1b098b83c90726848bd6726f74e72c557abb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "cid-chan",
+        "repo": "peerix",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "flakelight": "flakelight",
         "home-manager": "home-manager",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "peerix": "peerix"
       }
     }
   },
