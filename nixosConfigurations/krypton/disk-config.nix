@@ -90,6 +90,14 @@
                 mountpoint = "/home";
                 mountOptions = [ "compress=zstd" "noatime" ];
               };
+              "/libvirt/images" = {
+                mountpoint = "/var/lib/libvirt/images";
+                mountOptions = [ "compress=zstd" "noatime" ];
+              };
+              "/libvirt/installers" = {
+                mountpoint = "/var/lib/libvirt/installers";
+                mountOptions = [ "compress=zstd" "noatime" ];
+              };
               "/log" = {
                 mountpoint = "/log";
                 mountOptions = [ "compress=zstd" "noatime" ];
