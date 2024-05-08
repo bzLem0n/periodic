@@ -1,5 +1,12 @@
 { inputs, config, lib, pkgs, ... }: {
-  boot.swraid.mdadmConf = "MAILADDR kevinwaynecrook@gmail.com";
+  boot = {
+    swraid.mdadmConf = "MAILADDR kevinwaynecrook@gmail.com";
+    loader.grub = {
+      enable = true;
+      efiSupport = true;
+      efiInstallAsRemovable = true;
+    };
+  };
 
   networking = {
     hostName = "krypton";
