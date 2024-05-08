@@ -19,13 +19,18 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    lanzaboote = {
+      url = "github:nix-community/lanzaboote";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     peerix = {
       url = "github:cid-chan/peerix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-  outputs = { flakelight, home-manager, disko, peerix, ... }@inputs:
+  outputs = { flakelight, home-manager, disko, lanzaboote, peerix, ... }@inputs:
     flakelight ./. {
       inherit inputs;
 
