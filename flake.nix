@@ -4,13 +4,13 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs";
 
-    home-manager = {
-      url = "github:nix-community/home-manager";
+    flakelight = {
+      url = "github:nix-community/flakelight";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    flakelight = {
-      url = "github:nix-community/flakelight";
+    home-manager = {
+      url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -18,9 +18,14 @@
       url = "github:nix-community/disko";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    peerix = {
+      url = "github:cid-chan/peerix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { flakelight, home-manager, disko, ... }@inputs:
+  outputs = { flakelight, home-manager, disko, peerix, ... }@inputs:
     flakelight ./. {
       inherit inputs;
 
