@@ -8,6 +8,7 @@
     inputs.self.nixosModules.libvirt
     inputs.self.nixosModules.podman
 
+    inputs.home-manager.nixosModules.home-manager
     inputs.disko.nixosModules.disko
 
     #inputs.peerix.nixosModules.peerix
