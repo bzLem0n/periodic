@@ -13,9 +13,14 @@
       url = "github:nix-community/flakelight";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    disko = {
+      url = "github:nix-community/disko";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { flakelight, home-manager, ... }@inputs:
+  outputs = { flakelight, home-manager, disko, ... }@inputs:
     flakelight ./. {
       inherit inputs;
 
