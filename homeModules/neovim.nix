@@ -35,6 +35,7 @@
       set cursorline
       set scrolloff=10
       set nowrap
+      colorscheme industry
     '';
   };
 }
