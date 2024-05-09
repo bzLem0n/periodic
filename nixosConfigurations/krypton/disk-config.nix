@@ -47,10 +47,10 @@
               size = "2G";
               type = "EF00";
               content = {
-                name = "boot1";
+                name = "boot_backup";
                 type = "filesystem";
                 format = "vfat";
-                mountpoint = "/boot1";
+                mountpoint = "/boot_backup";
               };
             };
             mdadm = {
