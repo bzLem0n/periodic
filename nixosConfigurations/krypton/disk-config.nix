@@ -94,11 +94,11 @@
               };
               "/libvirt/images" = {
                 mountpoint = "/var/lib/libvirt/images";
-                mountOptions = [ "compress=zstd" "noatime" ];
+                mountOptions = [ "compress=zstd" "noatime" "nodatacow" ];
               };
               "/libvirt/installers" = {
                 mountpoint = "/var/lib/libvirt/installers";
-                mountOptions = [ "compress=zstd" "noatime" ];
+                mountOptions = [ "compress=zstd" "noatime" "nodatacow" ];
               };
               "/lxd" = {
                 mountpoint = "/var/lib/lxd";
