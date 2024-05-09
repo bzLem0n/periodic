@@ -16,8 +16,10 @@
               size = "2G";
               type = "EF00";
               content = {
-                type = "mdraid";
                 name = "boot";
+                type = "filesystem";
+                format = "vfat";
+                mountpoint = "/boot";
               };
             };
             mdadm = {
@@ -45,8 +47,10 @@
               size = "2G";
               type = "EF00";
               content = {
-                type = "mdraid";
-                name = "boot";
+                name = "boot1";
+                type = "filesystem";
+                format = "vfat";
+                mountpoint = "/boot1";
               };
             };
             mdadm = {
@@ -61,16 +65,6 @@
       };
     };
     mdadm = {
-      boot = {
-        type = "mdadm";
-        level = 1;
-        metadata = "1.0";
-        content = {
-          type = "filesystem";
-          format = "vfat";
-          mountpoint = "/boot";
-        };
-      };
       mirror = {
         type = "mdadm";
         level = 1;
@@ -104,6 +98,10 @@
               };
               "/libvirt/installers" = {
                 mountpoint = "/var/lib/libvirt/installers";
+                mountOptions = [ "compress=zstd" "noatime" ];
+              };
+              "/lxd" = {
+                mountpoint = "/var/lib/lxd";
                 mountOptions = [ "compress=zstd" "noatime" ];
               };
               "/log" = {
