@@ -3,7 +3,7 @@
     initrd.systemd.enable = true;
     swraid.mdadmConf = "MAILADDR kevinwaynecrook@gmail.com";
     loader.systemd-boot.enable = lib.mkForce false;
-    loader.efi.canTouchEfiVariables;
+    loader.efi.canTouchEfiVariables = true;
     lanzaboote = {
       enable = true;
       pkiBundle = "/etc/secureboot";
