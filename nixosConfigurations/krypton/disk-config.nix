@@ -16,7 +16,6 @@
               size = "2G";
               type = "EF00";
               content = {
-                name = "boot";
                 type = "filesystem";
                 format = "vfat";
                 mountpoint = "/boot";
@@ -47,7 +46,6 @@
               size = "2G";
               type = "EF00";
               content = {
-                name = "boot_backup";
                 type = "filesystem";
                 format = "vfat";
                 mountpoint = "/boot_backup";

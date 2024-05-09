@@ -1,10 +1,10 @@
 { inputs, config, lib, pkgs, ... }: {
   boot = {
     swraid.mdadmConf = "MAILADDR kevinwaynecrook@gmail.com";
-    loader.grub = {
+    loader.systemd-boot.enable = lib.mkForce false;
+    lanzaboote = {
       enable = true;
-      efiSupport = true;
-      efiInstallAsRemovable = true;
+      pkiBundle = "/etc/secureboot";
     };
   };
 
