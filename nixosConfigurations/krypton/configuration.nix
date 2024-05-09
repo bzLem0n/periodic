@@ -1,5 +1,6 @@
 { inputs, config, lib, pkgs, ... }: {
   boot = {
+    initrd.systemd.enable = true;
     swraid.mdadmConf = "MAILADDR kevinwaynecrook@gmail.com";
     loader.systemd-boot.enable = lib.mkForce false;
     lanzaboote = {
