@@ -2,7 +2,7 @@
   boot = {
     kernelPackages = config.boot.zfs.package.latestCompatibleLinuxPackages;
     initrd.systemd.enable = true;
-    loader.efi.canTouchEfVariables = true;
+    loader.efi.canTouchEfiVariables = true;
     loader.grub = {
       enable = true;
       efiSupport = true;
