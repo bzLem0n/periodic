@@ -131,7 +131,6 @@
     };
 
     zpool = {
-
       "zssd" = {
         type = "zpool";
         mode = "mirror";
@@ -156,7 +155,7 @@
             type = "zfs_fs";
             options = {
               mountpoint = "none";
-              reervation = "10G";
+              reservation = "10G";
             };
           };
 
@@ -259,7 +258,9 @@
           };
         };
       };
+    };
 
+    zpool = {
       "zhdd" = {
         type = "zpool";
         mode = "mirror";
@@ -281,7 +282,7 @@
             type = "zfs_fs";
             options = {
               mountpoint = "none";
-              reervation = "10G";
+              reservation = "10G";
             };
           };
 
