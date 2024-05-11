@@ -26,7 +26,7 @@
               end = "-8G";
               content = {
                 type = "zfs";
-                pool = "zssd";
+                pool = "zpool";
               };
             };
             "swap" = {
