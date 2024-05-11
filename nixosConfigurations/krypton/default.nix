@@ -3,14 +3,11 @@
 
   modules = [
     inputs.self.nixosModules.common
-    #    inputs.self.nixosModules.desktop
-    #    inputs.self.nixosModules.intelgpu
     inputs.self.nixosModules.libvirt
     inputs.self.nixosModules.podman
 
     inputs.home-manager.nixosModules.home-manager
     inputs.disko.nixosModules.disko
-    inputs.lanzaboote.nixosModules.lanzaboote
 
     #inputs.peerix.nixosModules.peerix
     #{
