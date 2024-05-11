@@ -79,7 +79,7 @@
     };
 
     zpool = {
-      "zssd" = {
+      "zpool" = {
         type = "zpool";
         mode = "mirror";
         rootFsOptions = {
