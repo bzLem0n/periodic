@@ -23,19 +23,19 @@
                 mountpoint = "/boot";
               };
             };
+            "zfs" = {
+              end = "-8G";
+              content = {
+                type = "zfs";
+                pool = "zssd";
+              };
+            };
             "swap" = {
-              size = "8G";
+              size = "100%";
               type = "8300";
               content = {
                 type = "swap";
                 resumeDevice = true;
-              };
-            };
-            "zfs" = {
-              size = "100%";
-              content = {
-                type = "zfs";
-                pool = "zssd";
               };
             };
           };
@@ -62,17 +62,17 @@
                 mountpoint = "/boot-backup";
               };
             };
-            "swap" = {
-              size = "8G";
-              type = "8300";
-              content.type = "swap";
-            };
             "zfs" = {
-              size = "100%";
+              end = "-8G";
               content = {
                 type = "zfs";
                 pool = "zssd";
               };
+            };
+            "swap" = {
+              size = "100%";
+              type = "8300";
+              content.type = "swap";
             };
           };
         };
@@ -258,9 +258,7 @@
           };
         };
       };
-    };
 
-    zpool = {
       "zhdd" = {
         type = "zpool";
         mode = "mirror";

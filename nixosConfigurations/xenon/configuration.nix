@@ -1,8 +1,9 @@
 { inputs, config, lib, pkgs, ... }: {
   boot = {
     kernelPackages = config.boot.zfs.package.latestCompatibleLinuxPackages;
-    initrd.systemd.enable = true;
     loader.efi.canTouchEfiVariables = true;
+    supportedFilesystems = [ "zfs" ];
+    zfs.extraPools = [ "zhdd" ];
     loader.grub = {
       enable = true;
       efiSupport = true;
