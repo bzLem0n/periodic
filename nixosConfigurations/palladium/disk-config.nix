@@ -1,9 +1,9 @@
 {
   disko.devices = {
     disk = {
-      "usb-ssd" = {
+      "uas-ssd" = {
         type = "disk";
-        device = "";
+        device = "/dev/disk/by-id/ata-SSD_240GB_TD19080002817";
         content = {
           type = "gpt";
           partitions = {
@@ -43,7 +43,7 @@
                       mountOptions = [ "compress=zstd" "noatime" ];
                     };
                     "/swap" = {
-                      mountpoint = "/.swapvol";
+                      mountpoint = "/swap";
                       swap.swapfile.size = "6G";
                     };
                   };
