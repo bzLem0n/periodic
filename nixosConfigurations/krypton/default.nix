@@ -3,6 +3,7 @@
 
   modules = [
     inputs.self.nixosModules.common
+    inputs.self.nixosModules.desktop
     inputs.self.nixosModules.libvirt
     inputs.self.nixosModules.podman
 
