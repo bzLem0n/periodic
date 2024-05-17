@@ -18,14 +18,9 @@
       url = "github:nix-community/disko";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    peerix = {
-      url = "github:cid-chan/peerix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
-  outputs = { flakelight, home-manager, disko, peerix, ... }@inputs:
+  outputs = { flakelight, home-manager, disko, ... }@inputs:
     flakelight ./. {
       inherit inputs;
 
