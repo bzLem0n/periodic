@@ -1,5 +1,5 @@
 {
-  description = "Home-manager flake using flakelight";
+  description = "NixOS and Home Manager flake using flakelight";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs";
