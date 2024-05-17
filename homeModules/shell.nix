@@ -44,6 +44,7 @@
     bat.enable = true;
     direnv.enable = true;
     direnv.nix-direnv.enable = true;
+    fastfetch.enable = true;
     htop.enable = true;
     jq.enable = true;
     ripgrep.enable = true;
