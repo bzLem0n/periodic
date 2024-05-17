@@ -12,6 +12,7 @@
   environment.systemPackages = with pkgs; [
     calibre
     deluge
+    neovide
     popcorntime
     spotify
 
