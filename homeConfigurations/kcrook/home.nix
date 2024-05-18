@@ -5,5 +5,7 @@
     stateVersion = "23.11";
   };
 
-  programs = { home-manager.enable = true; };
+  home.file.".nethackrc".source = "./dots/nethackrc";
+
+  programs.home-manager.enable = true;
 }
