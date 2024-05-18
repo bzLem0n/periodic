@@ -6,5 +6,7 @@
     inputs.self.nixosModules.network
     inputs.self.nixosModules.nix
     inputs.self.nixosModules.user-kcrook
+
+    inputs.agenix.nixosModules.default
   ];
 }

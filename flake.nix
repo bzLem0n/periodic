@@ -18,9 +18,14 @@
       url = "github:nix-community/disko";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    agenix = {
+      url = "github:ryantm/agenix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { flakelight, home-manager, disko, ... }@inputs:
+  outputs = { flakelight, home-manager, disko, agenix, ... }@inputs:
     flakelight ./. {
       inherit inputs;
 
