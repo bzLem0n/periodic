@@ -10,5 +10,5 @@
     inputs.agenix.nixosModules.default
   ];
 
-  environment.systemPackages = [ agenix.packages.x86_64-linux.default ];
+  environment.systemPackages = [ inputs.agenix.packages.x86_64-linux.default ];
 }
