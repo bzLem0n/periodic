@@ -318,6 +318,12 @@
             options.mountpoint = "legacy";
             options.canmount = "on";
           };
+          "DATA/http" = {
+            type = "zfs_fs";
+            mountpoint = "/srv/http";
+            options.mountpoint = "legacy";
+            options.canmount = "on";
+          };
 
           "VM" = {
             type = "zfs_fs";
