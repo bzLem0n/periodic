@@ -23,19 +23,22 @@
       set shiftwidth=4
       set autoindent
       set number
+      set relativenumber
       set cc=80
       set wildmenu
       set wildmode=list:longest
       set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
       set clipboard=unnamedplus
-      syntax on
       filetype on
       filetype plugin on
       filetype plugin indent on
       set cursorline
       set scrolloff=10
       set nowrap
-      colorscheme industry
+      set t_8f=[38;2;%lu;%lu;%lum
+      set t_8b=[48;2;%lu;%lu;%lum
+      set termguicolors
+      syntax enable
     '';
   };
 }
