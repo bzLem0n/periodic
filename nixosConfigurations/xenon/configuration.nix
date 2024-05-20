@@ -36,10 +36,11 @@
     email = "kevinwaynecrook@gmail.com";
     virtualHosts = {
       "lem0n.zapto.org" = {
-        serverAliases = [ "www.lem0n.zapto.org" ];
+        serverAliases = [ "192.168.1.54" ];
         extraConfig = ''
           encode gzip
-          root /srv/http
+          file_server
+          root * /srv/http
         '';
       };
       #"cache.lem0n.zapto.org" = {
