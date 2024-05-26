@@ -4,12 +4,23 @@
 
   services.pipewire = {
     enable = true;
+    audio.enable = true;
+    pulse.enable = true;
+
     alsa = {
       enable = true;
       support32Bit = true;
     };
-    audio.enable = true;
-    pulse.enable = true;
+
+    extraConfig.pipewire."91-low-latency" = {
+      context.properties = {
+        default.clock.rate = 48000;
+        default.clock.quantum = 32;
+        default.clock.min-quantum = 32;
+        default.clock.max-quantum = 32;
+      };
+    };
+
     wireplumber = {
       enable = true;
       extraConfig = {
