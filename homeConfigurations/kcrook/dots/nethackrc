@@ -1,3 +1,10 @@
+# Personal preferences.
+OPTIONS=race:human
+OPTIONS=role:monk
+OPTIONS=gender:male
+OPTIONS=align:neutral
+OPTIONS=pettype:none
+
 # Flavor options.
 OPTIONS=catname:Shadow
 OPTIONS=dogname:Shadow
