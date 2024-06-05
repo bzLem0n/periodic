@@ -31,7 +31,6 @@
       procs
       psmisc
       rsync
-      spotify-player
       tealdeer
       usbutils
       vifm

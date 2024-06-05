@@ -14,7 +14,6 @@
     deluge
     neovide
     popcorntime
-    spotify
 
     ark
     discover
