@@ -14,6 +14,7 @@
     deluge
     neovide
     popcorntime
+    tidal-hifi
 
     ark
     discover
