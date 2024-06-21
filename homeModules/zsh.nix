@@ -35,14 +35,24 @@
         "grc lsblk --tree=NAME --output=NAME,MOUNTPOINTS,PARTLABEL,SIZE,TYPE,ROTA,RM,MODEL";
       swapon = "swapon --show=NAME,LABEL,TYPE,SIZE,USED,PRIO";
 
-      ls  = "eza --no-quotes --icons=auto --color=auto";
-      la  = "eza --all --all --no-quotes --icons=auto --color=auto";
-      ld  = "eza --long --only-dirs --time-style=relative --no-quotes --icons=auto --color=auto";
-      lf  = "eza --long --only-files --time-style=relative --no-quotes --icons=auto --color=auto";
-      ll  = "eza --all --long --time-style=relative --no-quotes --icons=auto --color=auto";
-      lr  = "eza --tree --no-quotes --icons=auto --color=auto";
-      lsz = "eza --long --sort=size --total-filesize --no-permisions --no-time --no-user --no-quotes --icons=auto --color=auto";
-      ltm = "eza --long --sort=time --no-permisions --no-size --no-user --no-quotes --icons=auto --color=auto";
+      cp = "cp -v";
+      mv = "mv -v";
+      rm = "rm -v";
+      mkdir = "mkdir -p -v";
+
+      ls = "eza --no-quotes --icons=auto --color=auto";
+      la = "eza --all --all --no-quotes --icons=auto --color=auto";
+      ld =
+        "eza --long --only-dirs --time-style=relative --no-quotes --icons=auto --color=auto";
+      lf =
+        "eza --long --only-files --time-style=relative --no-quotes --icons=auto --color=auto";
+      ll =
+        "eza --all --long --time-style=relative --no-quotes --icons=auto --color=auto";
+      lr = "eza --tree --no-quotes --icons=auto --color=auto";
+      lsz =
+        "eza --long --sort=size --total-filesize --no-permisions --no-time --no-user --no-quotes --icons=auto --color=auto";
+      ltm =
+        "eza --long --sort=time --no-permisions --no-size --no-user --no-quotes --icons=auto --color=auto";
     };
   };
 }
