@@ -4,6 +4,7 @@
     timeServers = [ "timelord.uregina.ca" ];
 
     hosts = {
+      "192.168.1.18" = [ "argon" "argon.lem0n.zapto.org" ];
       "192.168.1.21" = [ "scandium" "scandium.lem0n.zapto.org" ];
       "192.168.1.30" = [ "zinc" "zinc.lem0n.zapto.org" ];
       "192.168.1.36" = [ "krypton" "krypton.lem0n.zapto.org" ];
