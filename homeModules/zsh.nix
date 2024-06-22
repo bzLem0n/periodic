@@ -52,7 +52,7 @@
       lsz =
         "eza --long --sort=size --total-size --no-permissions --no-time --no-user --no-quotes --icons=auto --color=auto";
       ltm =
-        "eza --long --sort=time --no-permissions --no-filesize --no-user --no-quotes --icons=auto --color=auto";
+        "eza --long --sort=time --time-style=relative --no-permissions --no-filesize --no-user --no-quotes --icons=auto --color=auto";
     };
   };
 }
