@@ -41,13 +41,13 @@
       mkdir = "mkdir -p -v";
 
       ls = "eza --no-quotes --icons=auto --color=auto";
-      la = "eza --all --all --no-quotes --icons=auto --color=auto";
-      ld =
-        "eza --long --only-dirs --time-style=relative --no-quotes --icons=auto --color=auto";
-      lf =
-        "eza --long --only-files --time-style=relative --no-quotes --icons=auto --color=auto";
       ll =
-        "eza --all --long --time-style=relative --no-quotes --icons=auto --color=auto";
+        "eza --long --time-style=relative --no-quotes --icons=auto --color=auto";
+      la = "eza --all --all --no-quotes --icons=auto --color=auto";
+      lla =
+        "eza --all --all --long --time-style=relative --no-quotes --icons=auto --color=auto";
+      ld = "eza --only-dirs --no-quotes --icons=auto --color=auto";
+      lf = "eza --only-files --no-quotes --icons=auto --color=auto";
       lr = "eza --tree --no-quotes --icons=auto --color=auto";
       lsz =
         "eza --long --sort=size --total-size --no-permissions --no-time --no-user --no-quotes --icons=auto --color=auto";
