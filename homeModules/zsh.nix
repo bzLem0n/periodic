@@ -50,9 +50,9 @@
         "eza --all --long --time-style=relative --no-quotes --icons=auto --color=auto";
       lr = "eza --tree --no-quotes --icons=auto --color=auto";
       lsz =
-        "eza --long --sort=size --total-filesize --no-permisions --no-time --no-user --no-quotes --icons=auto --color=auto";
+        "eza --long --sort=size --total-filesize --no-permissions --no-time --no-user --no-quotes --icons=auto --color=auto";
       ltm =
-        "eza --long --sort=time --no-permisions --no-size --no-user --no-quotes --icons=auto --color=auto";
+        "eza --long --sort=time --no-permissions --no-size --no-user --no-quotes --icons=auto --color=auto";
     };
   };
 }
