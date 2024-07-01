@@ -2,18 +2,18 @@
   boot.initrd.availableKernelModules = [ "i915" ];
 
   hardware = {
-    opengl = {
-      extraPackages = [
-        pkgs.intel-media-driver
-        pkgs.vaapiIntel
-        pkgs.vaapiVdpau
-        pkgs.libvdpau-va-gl
+    graphics = {
+      extraPackages = with pkgs; [
+        intel-media-driver
+        vaapiIntel
+        vaapiVdpau
+        libvdpau-va-gl
       ];
 
-      extraPackages32 = [
-        pkgs.driversi686Linux.intel-media-driver
-        pkgs.driversi686Linux.vaapiVdpau
-        pkgs.driversi686Linux.libvdpau-va-gl
+      extraPackages32 = with pkgs; [
+        driversi686Linux.intel-media-driver
+        driversi686Linux.libva-vdpau-driver
+        driversi686Linux.libvdpau-va-gl
       ];
     };
   };
