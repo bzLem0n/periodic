@@ -1,19 +1,20 @@
 { config, pkgs, lib, ... }: {
   boot.initrd.availableKernelModules = [ "i915" ];
 
+  environment.variables = {
+    VDPAU_DRIVER = "va_gl";
+  };
+
   hardware = {
     graphics = {
       extraPackages = with pkgs; [
         intel-media-driver
-        vaapiIntel
-        vaapiVdpau
-        libvdpau-va-gl
+        intel-vaapi-driver
       ];
 
-      extraPackages32 = with pkgs; [
-        driversi686Linux.intel-media-driver
-        driversi686Linux.libva-vdpau-driver
-        driversi686Linux.libvdpau-va-gl
+      extraPackages32 = with pkgs.driversi686Linux; [
+        intel-media-driver
+        intel-vaapi-driver
       ];
     };
   };
