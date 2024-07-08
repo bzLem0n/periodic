@@ -33,6 +33,8 @@
       less = "moar";
       lsblk =
         "grc lsblk --tree=NAME --output=NAME,MOUNTPOINTS,PARTLABEL,SIZE,TYPE,ROTA,RM,MODEL";
+      lsmod =
+        "grc lsmod";
       swapon = "swapon --show=NAME,LABEL,TYPE,SIZE,USED,PRIO";
 
       cp = "cp -v";
