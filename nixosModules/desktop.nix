@@ -86,6 +86,7 @@
 
     displayManager = {
       sddm.enable = true;
+      defaultSession = "plasmax11";
       autoLogin = {
         enable = true;
         user = "kcrook";
