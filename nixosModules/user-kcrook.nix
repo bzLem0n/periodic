@@ -16,14 +16,17 @@
     };
   };
 
-  programs.zsh.enable = true;
+  programs = {
+    fish.enable = true;
+    zsh.enable = true;
+  };
 
   users.users.kcrook = {
     isNormalUser = true;
     description = "Kevin Crook";
     extraGroups =
       [ "adbusers" "docker" "libvirtd" "networkmanager" "pipewire" "wheel" ];
-    shell = pkgs.zsh;
+    shell = pkgs.fish;
     initialPassword = "changeme";
   };
 }
