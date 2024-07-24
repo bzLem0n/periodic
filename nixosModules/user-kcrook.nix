@@ -7,7 +7,6 @@
       imports = [
         ../homeConfigurations/kcrook/home.nix
         inputs.self.homeModules.shell
-        inputs.self.homeModules.zsh
         inputs.self.homeModules.fish
         inputs.self.homeModules.tmux
         inputs.self.homeModules.neovim
@@ -16,10 +15,7 @@
     };
   };
 
-  programs = {
-    fish.enable = true;
-    zsh.enable = true;
-  };
+  programs.fish.enable = true;
 
   users.users.kcrook = {
     isNormalUser = true;

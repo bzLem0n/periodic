@@ -4,7 +4,6 @@
   modules = [
     ./home.nix
     inputs.self.homeModules.shell
-    inputs.self.homeModules.zsh
     inputs.self.homeModules.fish
     inputs.self.homeModules.tmux
     inputs.self.homeModules.neovim
