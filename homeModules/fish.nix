@@ -20,6 +20,7 @@
       cat = "bat";
       df = "grc df --local --print-type --exclude tmpfs --exclude devtmpfs --human-readable";
       diff = "difft";
+      dust = "dust --reverse --ignore_hidden --limit-filesystem";
       less = "moar";
       lsblk = "grc lsblk --tree=NAME --output=NAME,MOUNTPOINTS,PARTLABEL,SIZE,TYPE,ROTA,RM,MODEL";
       swapon = "swapon --show=NAME,LABEL,TYPE,SIZE,USED,PRIO";

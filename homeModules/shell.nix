@@ -11,6 +11,7 @@
       curl
       difftastic
       duf
+      dust
       efibootmgr
       eza
       file
