@@ -28,7 +28,6 @@
     krename
     krita
     lxqt.lximage-qt
-    neochat
     okular
     plasma-applet-caffeine-plus
     vlc
