@@ -12,6 +12,7 @@
   environment.systemPackages = with pkgs; [
     calibre
     deluge
+    miru
     neovide
     popcorntime
     tidal-hifi
