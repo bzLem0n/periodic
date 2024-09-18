@@ -1,6 +1,5 @@
 { inputs, config, lib, pkgs, ... }: {
   boot = {
-    kernelPackages = config.boot.zfs.package.latestCompatibleLinuxPackages;
     loader.efi.canTouchEfiVariables = true;
     supportedFilesystems = [ "zfs" ];
     loader.grub = {
