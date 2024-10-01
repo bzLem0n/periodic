@@ -53,6 +53,7 @@
       set number
       set relativenumber
       set cc=80
+      set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,eol:¶,precedes:«,extends:»
       set wildmenu
       set wildmode=list:longest
       set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
