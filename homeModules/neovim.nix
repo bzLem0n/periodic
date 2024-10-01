@@ -29,7 +29,6 @@
           tree-sitter-yaml
         ]
       ))
-      coc-nvim
       vim-nix
       vim-fugitive
       vim-commentary
