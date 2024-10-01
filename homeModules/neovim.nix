@@ -7,9 +7,9 @@
     vimAlias = true;
     vimdiffAlias = true;
 
-    plugins = with pkgs.vimPlugins; [
+    plugins = with pkgs.vimPlugins; [ 
       (nvim-treesitter.withPlugins (
-        plugins: with pluginst; [
+        plugins: with plugins; [
           tree-sitter-c
           tree-sitter-cpp
           tree-sitter-dockerfile
@@ -31,7 +31,7 @@
       ))
       coc-nvim
       vim-nix
-      vim-fugative
+      vim-fugitive
       vim-commentary
     ];
 
