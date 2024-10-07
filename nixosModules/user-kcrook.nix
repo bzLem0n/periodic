@@ -11,6 +11,7 @@
         inputs.self.homeModules.tmux
         inputs.self.homeModules.neovim
         inputs.self.homeModules.git
+        inputs.self.homeModules.desktop
       ];
     };
   };
