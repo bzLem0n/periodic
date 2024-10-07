@@ -1,5 +1,5 @@
-{ inputs, ... }: {
-  modules = [
-    inputs.self.homeModules.vscodium
+{ config, pkgs, lib, ... }: {
+  imports = [
+    ./vscodium.nix
   ];
 }
