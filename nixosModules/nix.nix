@@ -1,11 +1,7 @@
 { config, pkgs, lib, ... }: {
   nixpkgs.config.allowUnfree = true;
 
-  environment.systemPackages = with pkgs; [
-    cachix
-    comma
-    nix-output-monitor
-  ];
+  environment.systemPackages = with pkgs; [ cachix nix-output-monitor ];
 
   programs.nh = {
     enable = true;
