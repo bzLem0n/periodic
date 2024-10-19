@@ -10,7 +10,7 @@
   environment.sessionVariables = { MOZ_USE_XINPUT2 = "1"; };
 
   environment.systemPackages = with pkgs; [
-    calibre
+#    calibre
     deluge
     miru
     neovide
