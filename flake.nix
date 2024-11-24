@@ -2,7 +2,7 @@
   description = "NixOS and Home Manager flake using flakelight";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/release-24.11";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
 
     flakelight = {
       url = "github:nix-community/flakelight";
