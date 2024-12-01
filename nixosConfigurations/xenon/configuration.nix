@@ -30,27 +30,6 @@
     useDHCP = false;
   };
 
-  services.caddy = {
-    enable = true;
-    email = "kevinwaynecrook@gmail.com";
-    virtualHosts = {
-      "lem0n.zapto.org" = {
-        serverAliases = [ "192.168.1.54" ];
-        extraConfig = ''
-          encode gzip
-          file_server
-          root * /srv/http
-        '';
-      };
-      #"cache.lem0n.zapto.org" = {
-      #  serverAliases = [ "nixcache.lem0n.zapto.org" ];
-      #  extraConfig = ''
-      #    reverse_proxy http://192.168.1.54
-      #  '';
-      #};
-    };
-  };
-
   services.zfs = {
     autoScrub.enable = true;
     trim.enable = true;
