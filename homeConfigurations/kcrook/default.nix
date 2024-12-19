@@ -9,5 +9,8 @@
     inputs.self.homeModules.neovim
     inputs.self.homeModules.nix
     inputs.self.homeModules.git
+
+    inputs.nix-index-database.hmModules.nix-index
+    { programs.nix-index-database.comma.enable = true; }
   ];
 }

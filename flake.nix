@@ -24,9 +24,14 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.darwin.follows = "";
     };
+
+    nix-index-database = {
+      url = "github:nix-community/nix-index-database";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { flakelight, home-manager, disko, agenix, ... }@inputs:
+  outputs = { flakelight, home-manager, disko, agenix, nix-index-database, ... }@inputs:
     flakelight ./. {
       inherit inputs;
 

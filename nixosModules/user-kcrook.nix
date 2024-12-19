@@ -12,11 +12,16 @@
         inputs.self.homeModules.neovim
         inputs.self.homeModules.git
         ../homeModules/desktop.nix
+
+        inputs.nix-index-database.hmModules.nix-index
       ];
     };
   };
 
-  programs.fish.enable = true;
+  programs = {
+    fish.enable = true;
+    nix-index-database.comma.enable = true;
+  };
 
   users.users.kcrook = {
     isNormalUser = true;

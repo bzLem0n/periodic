@@ -48,6 +48,7 @@
     fastfetch.enable = true;
     htop.enable = true;
     jq.enable = true;
+    nix-index.enable = true;
     ripgrep.enable = true;
     ssh.enable = true;
     yt-dlp.enable = true;
