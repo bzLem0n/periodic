@@ -67,6 +67,9 @@
       set t_8b=[48;2;%lu;%lu;%lum
       set termguicolors
       syntax enable
+      set foldmethod=expr
+      set foldexpr=nvim_treesitter#foldexpr()
+      autocmd BufReadPost,FileReadPost * normal zR
     '';
   };
 }
