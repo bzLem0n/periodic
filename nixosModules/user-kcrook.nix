@@ -27,7 +27,7 @@
     isNormalUser = true;
     description = "Kevin Crook";
     extraGroups =
-      [ "adbusers" "docker" "libvirtd" "networkmanager" "pipewire" "wheel" ];
+      [ "adbusers" "docker" "podman" "libvirtd" "networkmanager" "pipewire" "wheel" ];
     shell = pkgs.fish;
     initialPassword = "changeme";
   };
