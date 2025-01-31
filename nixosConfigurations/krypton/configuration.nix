@@ -6,17 +6,6 @@
       enable = true;
       efiSupport = true;
       zfsSupport = true;
-      mirroredBoots = [
-        {
-          devices = [ "/dev/disk/by-id/ata-ADATA_SP550_2G2720014934" ];
-          path = "/boot";
-        }
-        {
-          devices =
-            [ "/dev/disk/by-id/ata-WDC_WDS120G2G0B-00EPW0_190134800060" ];
-          path = "/boot-fallback";
-        }
-      ];
     };
   };
 
