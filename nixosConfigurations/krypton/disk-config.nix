@@ -4,7 +4,8 @@
 
       "sata-ssd" = {
         type = "disk";
-        device = "/dev/disk/by-id/ata-ADATA_SP550_2G2720014934";
+        device =
+          "/dev/disk/by-id/ata-ADATA_SP550_2G2720014934";
         content = {
           type = "gpt";
           partitions = {
@@ -26,7 +27,7 @@
               end = "-8G";
               content = {
                 type = "zfs";
-                pool = "zssd";
+                pool = "zpool";
               };
             };
             "swap" = {
@@ -40,48 +41,11 @@
           };
         };
       };
-
-      "m2-ssd" = {
-        type = "disk";
-        device = "/dev/disk/by-id/ata-WDC_WDS120G2G0B-00EPW0_190134800060";
-        content = {
-          type = "gpt";
-          partitions = {
-            "boot" = {
-              size = "1M";
-              type = "EF02";
-              priority = 1;
-            };
-            "esp" = {
-              size = "2G";
-              type = "EF00";
-              content = {
-                type = "filesystem";
-                format = "vfat";
-                mountpoint = "/boot-backup";
-              };
-            };
-            "zfs" = {
-              end = "-8G";
-              content = {
-                type = "zfs";
-                pool = "zssd";
-              };
-            };
-            "swap" = {
-              size = "100%";
-              type = "8300";
-              content.type = "swap";
-            };
-          };
-        };
-      };
     };
 
     zpool = {
       "zpool" = {
         type = "zpool";
-        mode = "mirror";
         rootFsOptions = {
           acltype = "posixacl";
           canmount = "off";
