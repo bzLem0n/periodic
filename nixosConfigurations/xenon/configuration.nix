@@ -27,6 +27,7 @@
     firewall.enable = false;
     bridges.br0.interfaces = [ "enp3s0" ];
     interfaces.br0.useDHCP = true;
+    interfaces.br0.mac = "d0:50:99:aa:30:79";
     useDHCP = false;
   };
 
