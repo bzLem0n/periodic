@@ -21,7 +21,7 @@
         "https://cache.nixos.org/"
       ];
       trusted-public-keys = [
-        "192.168.1.36:Qk09ZP8fzCnd2i3deuhofyPSGa/M9O1gQZIFzGs/5gY="
+        "192.168.1.36:tEdLEHu8aGnsnr/XL4uulyytFZjS6QTtASO49Z0af28="
         "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
         "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
       ];
