@@ -2,7 +2,7 @@
   disko.devices = {
     disk = {
 
-      "sata-ssd" = {
+      "m2-ssd" = {
         type = "disk";
         device =
           "/dev/disk/by-id/ata-WDC_WDS120G2G0B-00EPW0_190134800060";
