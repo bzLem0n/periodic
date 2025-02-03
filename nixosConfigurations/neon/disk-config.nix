@@ -5,7 +5,7 @@
       "sata-ssd" = {
         type = "disk";
         device =
-          "/dev/disk/by-id/ata-Samsung_SSD_840_EVO_250GB_S1DBNSADC89672X";
+          "/dev/disk/by-id/ata-WDC_WDS120G2G0B-00EPW0_190134800060";
         content = {
           type = "gpt";
           partitions = {
