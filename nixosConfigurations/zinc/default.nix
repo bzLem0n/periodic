@@ -3,8 +3,7 @@
 
   modules = [
     inputs.self.nixosModules.common
-    inputs.self.nixosModules.libvirt
-    inputs.self.nixosModules.podman
+    inputs.self.nixosModules.desktop
 
     inputs.home-manager.nixosModules.home-manager
     inputs.disko.nixosModules.disko
