@@ -25,6 +25,7 @@
       less = "moar";
       lsblk = "grc lsblk --tree=NAME --output=NAME,MOUNTPOINTS,PARTLABEL,SIZE,TYPE,ROTA,RM,MODEL";
       swapon = "swapon --show=NAME,LABEL,TYPE,SIZE,USED,PRIO";
+      nvim = "nvim --clean";
 
       cp = "cp -v";
       mv = "mv -v";
