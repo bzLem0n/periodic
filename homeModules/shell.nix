@@ -1,7 +1,7 @@
 { config, pkgs, lib, ... }: {
   home = {
     sessionVariables = {
-      EDITOR = "nvim";
+      EDITOR = "nvim --clean";
       PAGER = "moar -quit-if-one-screen";
     };
 
