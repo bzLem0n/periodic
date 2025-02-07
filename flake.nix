@@ -32,10 +32,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    systems = {
-      url = "path:./systems.nix";
-      flake = false;
-    };
+    systems.url = "github:nix-systems/x86_64-linux";
   };
 
   outputs = { flakelight, home-manager, disko, agenix, nix-index-database, systems, ... }@inputs:
