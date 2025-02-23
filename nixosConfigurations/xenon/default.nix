@@ -5,6 +5,7 @@
     inputs.self.nixosModules.common
     inputs.self.nixosModules.libvirt
     inputs.self.nixosModules.podman
+    inputs.self.nixosModules.srv-smb
 
     inputs.home-manager.nixosModules.home-manager
     inputs.disko.nixosModules.disko
