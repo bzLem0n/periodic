@@ -9,6 +9,7 @@
     inputs.self.nixosModules.libvirt
     inputs.self.nixosModules.nixcache
     inputs.self.nixosModules.podman
+    inputs.self.nixosModules.webserver
 
     inputs.home-manager.nixosModules.home-manager
     inputs.disko.nixosModules.disko
