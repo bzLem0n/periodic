@@ -12,6 +12,7 @@
       "192.168.1.46" = [ "palladium" "palladium.lem0n.zapto.org" ];
       "192.168.1.47" = [ "silver" "silver.lem0n.zapto.org" ];
       "192.168.1.54" = [ "xenon" "xenon.lem0n.zapto.org" ];
+      "192.168.1.219" = [ "homeassistant" "homeassistant.lem0n.zapto.org" ];
       "192.168.1.220" = [ "avr" "avr.lem0n.zapto.org" ];
       "192.168.1.221" = [ "nest" "nest.lem0n.zapto.org" ];
       "192.168.1.222" = [ "hue" "hue.lem0n.zapto.org" ];
