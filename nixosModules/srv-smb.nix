@@ -16,12 +16,11 @@
       "library" = {
         "path" = "/srv/library";
         "browseable" = "yes";
-        "read only" = "no";
+        "read only" = "yes";
         "guest ok" = "yes";
+        "write list" = "kcrook";
         "create mask" = "0644";
         "directory mask" = "0755";
-        "force user" = "kcrook";
-        "force group" = "users";
       };
     };
   };
