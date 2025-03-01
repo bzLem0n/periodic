@@ -22,6 +22,14 @@
         "create mask" = "0644";
         "directory mask" = "0755";
       };
+      "backup" = {
+        "path" = "/srv/backup";
+        "browseable" = "yes";
+        "read only" = "no";
+        "guest ok" = "no";
+        "create mask" = "0600";
+        "directory mask" = "0700";
+      };
     };
   };
 
