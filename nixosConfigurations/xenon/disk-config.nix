@@ -318,6 +318,12 @@
             options.mountpoint = "legacy";
             options.canmount = "on";
           };
+          "DATA/backup" = {
+            type = "zfs_fs";
+            mountpoint = "/srv/backup";
+            options.mountpoint = "legacy";
+            options.canmount = "on";
+          };
           "DATA/library" = {
             type = "zfs_fs";
             mountpoint = "/srv/library";
