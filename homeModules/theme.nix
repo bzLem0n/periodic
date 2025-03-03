@@ -1,4 +1,4 @@
-{ inputs, ... }: {
+{ inputs, pkgs, ... }: {
   stylix = {
     enable = true;
     image = ../media/wallpaper.png;
