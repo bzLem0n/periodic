@@ -9,8 +9,10 @@
     inputs.self.homeModules.neovim
     inputs.self.homeModules.nix
     inputs.self.homeModules.git
+    inputs.self.homeModules.theme
 
     inputs.nix-index-database.hmModules.nix-index
+    inputs.stylix.homeManagerModules.stylix
     { programs.nix-index-database.comma.enable = true; }
   ];
 }

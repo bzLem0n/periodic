@@ -5,10 +5,12 @@
     inputs.self.nixosModules.neovim
     inputs.self.nixosModules.network
     inputs.self.nixosModules.nix
+    inputs.self.nixosModules.theme
     inputs.self.nixosModules.user-kcrook
 
     inputs.agenix.nixosModules.default
     inputs.nix-index-database.nixosModules.nix-index
+    inputs.stylix.nixosModules.stylix
   ];
 
   environment.systemPackages = [ inputs.agenix.packages.x86_64-linux.default ];

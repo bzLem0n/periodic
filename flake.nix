@@ -42,7 +42,7 @@
     systems.url = "github:nix-systems/x86_64-linux";
   };
 
-  outputs = { flakelight, home-manager, disko, agenix, nix-index-database, systems, ... }@inputs:
+  outputs = { flakelight, home-manager, disko, agenix, nix-index-database, stylix, systems, ... }@inputs:
     flakelight ./. {
       inherit inputs;
 
