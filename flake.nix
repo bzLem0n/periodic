@@ -32,6 +32,13 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    stylix = {
+      url = "github:danth/stylix/release-24.11";
+      inputs.home-manager.follows = "nixpkgs";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.systems.follows = "systems";
+    };
+
     systems.url = "github:nix-systems/x86_64-linux";
   };
 
