@@ -3,9 +3,9 @@
     username = "kcrook";
     homeDirectory = "/home/kcrook";
     stateVersion = "23.11";
-  };
 
-  home.file.".nethackrc".source = ./dots/nethackrc;
+    file.".nethackrc".source = ./dots/nethackrc;
+  };
 
   programs.home-manager.enable = true;
 }
