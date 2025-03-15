@@ -15,7 +15,7 @@
       sansSerif.package = pkgs.liberation_ttf;
       sansSerif.name = "Liberation Sans";
 
-      monospace.package = pkgs.fira-code-nerdfont;
+      monospace.package = pkgs.nerd-fonts.fira-code;
       monospace.name = "Fira Code Nerd Font Mono";
     };
     homeManagerIntegration.autoImport = false;

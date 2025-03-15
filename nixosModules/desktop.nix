@@ -2,9 +2,9 @@
   imports = [ inputs.self.nixosModules.sound ];
 
   environment.plasma6.excludePackages = with pkgs; [
-    pkgs.khelpcenter
-    pkgs.elisa
-    pkgs.gwenview
+    pkgs.kdePackages.khelpcenter
+    pkgs.kdePackages.elisa
+    pkgs.kdePackages.gwenview
   ];
 
   environment.sessionVariables = { MOZ_USE_XINPUT2 = "1"; };
@@ -17,20 +17,19 @@
     popcorntime
     tidal-hifi
 
-    ark
-    discover
-    filelight
-    kate
-    kcalc
-    kcharselect
-    kcolorchooser
-    konversation
-    krdc
+    kdePackages.ark
+    kdePackages.discover
+    kdePackages.filelight
+    kdePackages.kate
+    kdePackages.kcalc
+    kdePackages.kcharselect
+    kdePackages.kcolorchooser
+    kdePackages.konversation
+    kdePackages.krdc
+    kdePackages.okular
     krename
     krita
     lxqt.lximage-qt
-    okular
-    plasma-applet-caffeine-plus
     vlc
     xscreensaver
 
@@ -42,7 +41,7 @@
     ntfs3g
 
     ffmpegthumbnailer
-    ffmpegthumbs
+    kdePackages.ffmpegthumbs
     libdbusmenu-gtk2
     libdbusmenu-gtk3
   ];
@@ -51,9 +50,10 @@
 
   fonts.packages = with pkgs; [
     liberation_ttf
-    (nerdfonts.override {
-      fonts = [ "FiraCode" "JetBrainsMono" "LiberationMono" "OpenDyslexic" ];
-    })
+    nerd-fonts.fira-code
+    nerd-fonts.jetbrains-mono
+    nerd-fonts.liberation
+    nerd-fonts.open-dyslexic
   ];
 
   hardware = {
