@@ -18,5 +18,6 @@
       monospace.package = pkgs.fira-code-nerdfont;
       monospace.name = "Fira Code Nerd Font Mono";
     };
+    homeManagerIntegration.autoImport = false;
   };
 }
