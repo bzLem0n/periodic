@@ -1,7 +1,6 @@
 { inputs, pkgs, ... }: {
   stylix = {
     enable = true;
-    image = ../media/wallpaper.png;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/selenized-black.yaml";
     cursor = {
       package = pkgs.kdePackages.breeze;
