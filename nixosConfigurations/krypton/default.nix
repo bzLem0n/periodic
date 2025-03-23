@@ -5,6 +5,7 @@
     inputs.self.nixosModules.common
     inputs.self.nixosModules.desktop
     inputs.self.nixosModules.games
+    inputs.self.nixosModules.harmonia
     inputs.self.nixosModules.intelgpu
     inputs.self.nixosModules.libvirt
     inputs.self.nixosModules.podman
