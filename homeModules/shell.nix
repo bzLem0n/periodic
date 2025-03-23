@@ -7,6 +7,7 @@
 
     packages = with pkgs; [
       alejandra
+      btop
       cifs-utils
       curl
       difftastic
