@@ -1,0 +1,29 @@
+#<type>[optional scope]: <description>           #
+
+##################################################
+# Write a title summarizing what this commit does, starting with an
+# uppercase imperative verb, such as: Add, Fix, Drop, Refactor, Bump,
+# Refactor, Reformat, Rephrase.  Think of your title as akin to an
+# email subject, so you don't need to end with a sentence period.
+# Use 50 char maximum, which is this line's width.
+#
+# Type:
+#    feat     – a new feature is introduced with the changes
+#    fix      – a bug fix has occurred
+#    chore    – changes that do not relate to a fix or feature
+#    refactor – refactored code that doesn't add fixes or features
+#    docs     – updates to documentation such as a the README
+#    style    – changes that do not affect the meaning of the code
+#    test     – including new or correcting previous tests
+#    perf     – performance improvements
+#    ci       – continuous integration related
+#    build    – changes that affect the build system
+#    revert   – reverts a previous commit
+##################################################
+
+#[optional body]                                                       #
+########################################################################
+
+#[optional footer(s)]                                                  #
+########################################################################
+
