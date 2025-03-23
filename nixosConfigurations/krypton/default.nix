@@ -7,7 +7,6 @@
     inputs.self.nixosModules.games
     inputs.self.nixosModules.intelgpu
     inputs.self.nixosModules.libvirt
-    inputs.self.nixosModules.nixcache
     inputs.self.nixosModules.podman
     inputs.self.nixosModules.webserver
 
