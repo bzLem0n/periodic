@@ -8,12 +8,9 @@
     inputs.self.nixosModules.theme
     inputs.self.nixosModules.user-kcrook
 
-    inputs.agenix.nixosModules.default
     inputs.nix-index-database.nixosModules.nix-index
     inputs.stylix.nixosModules.stylix
   ];
-
-  environment.systemPackages = [ inputs.agenix.packages.x86_64-linux.default ];
 
   programs.nix-index.enable = true;
 }

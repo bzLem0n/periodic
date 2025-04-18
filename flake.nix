@@ -19,14 +19,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    agenix = {
-      url = "github:ryantm/agenix";
-      inputs.home-manager.follows = "nixpkgs";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.systems.follows = "systems";
-      inputs.darwin.follows = "";
-    };
-
     nix-index-database = {
       url = "github:nix-community/nix-index-database";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -57,7 +49,7 @@
     trusted-users = [ "root" "@wheel" ];
   };
 
-  outputs = { flakelight, home-manager, disko, agenix, nix-index-database, stylix, systems, ... }@inputs:
+  outputs = { flakelight, home-manager, disko, nix-index-database, stylix, systems, ... }@inputs:
     flakelight ./. {
       inherit inputs;
 
