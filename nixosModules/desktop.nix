@@ -1,4 +1,11 @@
-{ inputs, config, pkgs, lib, ... }: {
+{
+  inputs,
+  config,
+  pkgs,
+  lib,
+  ...
+}:
+{
   imports = [ inputs.self.nixosModules.sound ];
 
   environment.plasma6.excludePackages = with pkgs; [
@@ -7,7 +14,9 @@
     pkgs.kdePackages.gwenview
   ];
 
-  environment.sessionVariables = { MOZ_USE_XINPUT2 = "1"; };
+  environment.sessionVariables = {
+    MOZ_USE_XINPUT2 = "1";
+  };
 
   environment.systemPackages = with pkgs; [
     #    calibre

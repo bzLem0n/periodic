@@ -1,4 +1,11 @@
-{ inputs, config, lib, pkgs, ... }: {
+{
+  inputs,
+  config,
+  lib,
+  pkgs,
+  ...
+}:
+{
   boot = {
     supportedFilesystems = [ "btrfs" ];
     kernelParams = [ "mitigations=off" ];

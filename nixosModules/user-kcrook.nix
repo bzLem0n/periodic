@@ -1,4 +1,11 @@
-{ inputs, config, pkgs, lib, ... }: {
+{
+  inputs,
+  config,
+  pkgs,
+  lib,
+  ...
+}:
+{
   imports = [ inputs.home-manager.nixosModules.home-manager ];
 
   home-manager = {
@@ -26,8 +33,15 @@
   users.users.kcrook = {
     isNormalUser = true;
     description = "Kevin Crook";
-    extraGroups =
-      [ "adbusers" "docker" "podman" "libvirtd" "networkmanager" "pipewire" "wheel" ];
+    extraGroups = [
+      "adbusers"
+      "docker"
+      "podman"
+      "libvirtd"
+      "networkmanager"
+      "pipewire"
+      "wheel"
+    ];
     shell = pkgs.fish;
     initialPassword = "changeme";
   };

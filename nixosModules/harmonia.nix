@@ -1,8 +1,17 @@
-{ config, pkgs, lib, ... }: {
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
+{
   services.harmonia.enable = true;
   services.harmonia.signKeyPaths = [ "/var/lib/secrets/harmonia.secret" ];
 
-  networking.firewall.allowedTCPPorts = [ 443 80 ];
+  networking.firewall.allowedTCPPorts = [
+    443
+    80
+  ];
 
   services.nginx = {
     enable = true;

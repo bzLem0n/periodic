@@ -35,7 +35,10 @@
   };
 
   nixConfig = {
-    experimental-features = [ "nix-command" "flakes" ];
+    experimental-features = [
+      "nix-command"
+      "flakes"
+    ];
     extra-substituters = [
       "http://192.168.1.36/"
       "https://nix-community.cachix.org/"
@@ -46,17 +49,29 @@
       "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
       "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
     ];
-    trusted-users = [ "root" "@wheel" ];
+    trusted-users = [
+      "root"
+      "@wheel"
+    ];
   };
 
-  outputs = { flakelight, home-manager, disko, nix-index-database, stylix, systems, ... }@inputs:
+  outputs =
+    {
+      flakelight,
+      home-manager,
+      disko,
+      nix-index-database,
+      stylix,
+      systems,
+      ...
+    }@inputs:
     flakelight ./. {
       inherit inputs;
 
       nixDir = ./.;
 
-      devShell.packages = pkgs:
-        with pkgs; [
+      devShell.packages =
+        pkgs: with pkgs; [
           nixfmt-tree
           markdownlint-cli2
           git

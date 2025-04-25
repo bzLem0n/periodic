@@ -1,4 +1,11 @@
-{ inputs, config, lib, pkgs, ... }: {
+{
+  inputs,
+  config,
+  lib,
+  pkgs,
+  ...
+}:
+{
   boot = {
     loader.efi.canTouchEfiVariables = true;
     supportedFilesystems = [ "zfs" ];
@@ -9,8 +16,7 @@
       zfsSupport = true;
       mirroredBoots = [
         {
-          devices =
-            [ "/dev/disk/by-id/ata-Samsung_SSD_850_EVO_500GB_S2RANXAH180187P" ];
+          devices = [ "/dev/disk/by-id/ata-Samsung_SSD_850_EVO_500GB_S2RANXAH180187P" ];
           path = "/boot";
         }
         {

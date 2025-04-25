@@ -4,8 +4,7 @@
 
       "sata-ssd" = {
         type = "disk";
-        device =
-          "/dev/disk/by-id/ata-Samsung_SSD_850_EVO_500GB_S2RANXAH180187P";
+        device = "/dev/disk/by-id/ata-Samsung_SSD_850_EVO_500GB_S2RANXAH180187P";
         content = {
           type = "gpt";
           partitions = {
@@ -280,7 +279,9 @@
           xattr = "sa";
           "com.sun:auto-snapshot" = "false";
         };
-        options = { ashift = "12"; };
+        options = {
+          ashift = "12";
+        };
         datasets = {
           "reserved" = {
             type = "zfs_fs";

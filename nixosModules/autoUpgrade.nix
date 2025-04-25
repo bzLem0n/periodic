@@ -1,4 +1,10 @@
-{ config, pkgs, lib, ... }: {
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
+{
   system.autoUpgrade = {
     enable = true;
     flake = "github:bzLem0n/periodic#${config.networking.hostName}";

@@ -4,8 +4,7 @@
 
       "sata-ssd" = {
         type = "disk";
-        device =
-          "/dev/disk/by-id/ata-ADATA_SP550_2G2720014934";
+        device = "/dev/disk/by-id/ata-ADATA_SP550_2G2720014934";
         content = {
           type = "gpt";
           partitions = {

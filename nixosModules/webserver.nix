@@ -1,4 +1,10 @@
-{ config, pkgs, lib, ... }: {
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
+{
   security.acme = {
     acceptTerms = true;
     defaults.email = "kevinwaynecrook@gmail.com";

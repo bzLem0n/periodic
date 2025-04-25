@@ -1,7 +1,16 @@
-{ config, pkgs, lib, ... }: {
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
+{
   nixpkgs.config.allowUnfree = true;
 
-  environment.systemPackages = with pkgs; [ cachix nix-output-monitor ];
+  environment.systemPackages = with pkgs; [
+    cachix
+    nix-output-monitor
+  ];
 
   programs.nh = {
     enable = true;
@@ -13,7 +22,10 @@
   };
 
   nix = {
-    settings.experimental-features = [ "nix-command" "flakes" ];
+    settings.experimental-features = [
+      "nix-command"
+      "flakes"
+    ];
     settings = {
       substituters = [
         "http://192.168.1.36/"
@@ -25,7 +37,10 @@
         "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
         "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
       ];
-      trusted-users = [ "root" "@wheel" ];
+      trusted-users = [
+        "root"
+        "@wheel"
+      ];
     };
   };
 }

@@ -1,4 +1,5 @@
-{ inputs, pkgs, ... }: {
+{ inputs, pkgs, ... }:
+{
   stylix = {
     enable = true;
     image = pkgs.fetchurl {

@@ -1,4 +1,10 @@
-{ config, pkgs, lib, ... }: {
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
+{
   boot.initrd.availableKernelModules = [ "amdgpu" ];
 
   hardware.graphics = {
