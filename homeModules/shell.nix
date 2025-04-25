@@ -26,8 +26,7 @@
       mtr
       nethack
       nfs-utils
-      nixfmt-classic
-      nixpkgs-fmt
+      nixfmt-tree
       nix-output-monitor
       p7zip
       pciutils

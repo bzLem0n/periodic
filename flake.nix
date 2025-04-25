@@ -57,13 +57,13 @@
 
       devShell.packages = pkgs:
         with pkgs; [
-          nixpkgs-fmt
+          nixfmt-tree
           markdownlint-cli2
           git
         ];
 
       formatters = {
-        "*.nix" = "nixpkgs-fmt";
+        "*.nix" = "nixfmt-tree";
         "*.md" = "markdownlint-cli2";
       };
     };
