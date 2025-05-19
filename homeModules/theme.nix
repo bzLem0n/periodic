@@ -23,5 +23,8 @@
       monospace.name = "Fira Code Nerd Font Mono";
     };
     targets.kde.enable = false;
+
+# Work aroud a bug in stylix
+    targets.mako.enable = false;
   };
 }
