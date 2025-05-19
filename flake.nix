@@ -25,7 +25,7 @@
     };
 
     stylix = {
-      url = "github:danth/stylix/release-24.11";
+      url = "github:nix-community/stylix/release-24.11";
       inputs.home-manager.follows = "nixpkgs";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.systems.follows = "systems";
