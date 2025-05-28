@@ -68,7 +68,7 @@
     flakelight ./. {
       inherit inputs;
 
-      nixDir = ./.;
+      nixDir = ./nix;
 
       devShell.packages =
         pkgs: with pkgs; [
