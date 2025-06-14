@@ -12,7 +12,7 @@
   ];
 
   home.sessionVariables = {
-    FLAKE = "/home/kcrook/code/github/bzLem0n/periodic";
+    NH_FLAKE = "/home/kcrook/code/github/bzLem0n/periodic";
   };
 
   nix = {
