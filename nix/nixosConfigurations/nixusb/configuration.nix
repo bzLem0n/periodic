@@ -23,5 +23,7 @@
     useDHCP = false;
   };
 
+  hardware.enableRedistributableFirmware = true;
+
   system.stateVersion = "25.05";
 }
