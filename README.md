@@ -1,7 +1,7 @@
 
 # periodic
 
-Personal Home-manager and NixOS configurations for the devices on the lem0n.zapto.org network.
+Personal Home-Manager and NixOS configurations for the devices on the lem0n.zapto.org network.
 
 
 ## New Installation
@@ -41,12 +41,12 @@ Personal Home-manager and NixOS configurations for the devices on the lem0n.zapt
   git clone https://github.com/bzLem0n/periodic.git .
   ```
 
-* Create a new host by copying and exising one and overwriting the (`hardware-configuration.nix`, `disk-config.nix`) files.  Edit the new configs as needed.
+* Create a new host by copying an existing one and overwriting the (`hardware-configuration.nix`, `disk-config.nix`) files.  Edit the new configs as needed.
   ```bash
   cp -r ./nix/nixosConfigurations/palladium ./nix/nixosConfigurations/hostname
   cp /mnt/etc/nixos/hardware-configuration.nix ./nix/nixosConfigurations/hostname/
   sudo rm /mnt/etc/nixos/*
-  cp /tmp/disk-config.nix ./nix/nixosConfigurations/hostnaem/
+  cp /tmp/disk-config.nix ./nix/nixosConfigurations/hostname/
   ```
 
 * Install NixOS and reboot into the new system.
@@ -59,7 +59,7 @@ Personal Home-manager and NixOS configurations for the devices on the lem0n.zapt
 
 ## Host: palladium
 
-This laptop is too underspecced to build its own NixOS install.  Updates are done on host krypton with the USB drive plugged in to that host.
+This laptop is too under-specced to build its own NixOS install.  Updates are done on host krypton with the USB drive plugged in to that host.
 
 * Mount the filesystems.
   ```bash
