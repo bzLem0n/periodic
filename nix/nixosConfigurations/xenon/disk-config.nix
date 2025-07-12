@@ -71,7 +71,9 @@
             "swap" = {
               size = "100%";
               type = "8300";
-              content.type = "swap";
+              content = {
+                type = "swap";
+              };
             };
           };
         };
