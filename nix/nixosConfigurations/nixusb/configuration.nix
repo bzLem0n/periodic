@@ -7,7 +7,7 @@
 }:
 {
   boot = {
-    supportedFilesystems = [ "btrfs" ];
+    supportedFilesystems = [ "btrfs" "zfs" ];
     loader.grub = {
       enable = true;
       efiSupport = true;
@@ -18,6 +18,7 @@
 
   networking = {
     hostName = "nixusb";
+    hostId = "8c696686";
     firewall.enable = false;
     networkmanager.enable = true;
     useDHCP = false;
