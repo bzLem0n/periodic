@@ -19,10 +19,6 @@
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
 
-  swapDevices = [
-    { device = "/dev/disk/by-uuid/04573358-626d-4889-9f80-68ff8345dae8"; }
-  ];
-
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
 }
