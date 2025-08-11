@@ -25,7 +25,7 @@
               };
             };
             "swap" = {
-              size = "100%";
+              size = "16G";
               type = "8300";
               content = {
                 type = "swap";
@@ -38,16 +38,16 @@
 
       "sata-hdd" = {
         type = "disk";
-        device = "/dev/disk/by-id/ata-WDC_WD30EZRX-00D8PB0_WD-WCC4N2UVUEFF";
+        device = "/dev/disk/by-id/ata-WDC_WD30EZRX-00D8PB0_WD-WMC4N1570180";
         content = {
           type = "gpt";
           partitions = {
-            "Linux Games" = {
+            "games" = {
               size = "100%";
               content = {
                 type = "filesystem";
                 format = "ext4";
-                mountpoint = "/mnt/Linux Games";
+                mountpoint = "/mnt/games";
               };
             };
           };
@@ -128,6 +128,7 @@
           "DATA/HOME/kcrook" = {
             type = "zfs_fs";
             mountpoint = "/home/kcrook";
+            postCreateHook = "zfs list -t snapshot -H -o name | grep -E '^znvme/DATA/HOME/kcrook@blank$' || zfs snapshot znvme/DATA/HOME/kcrook@blank";
           };
           "DATA/HOME/root" = {
             type = "zfs_fs";
