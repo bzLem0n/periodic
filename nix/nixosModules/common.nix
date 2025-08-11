@@ -20,4 +20,6 @@
   ];
 
   programs.nix-index.enable = true;
+
+  services.userborn.enable = true;
 }
