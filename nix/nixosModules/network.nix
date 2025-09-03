@@ -29,6 +29,7 @@
       "192.168.1.36" = [
         "krypton"
         "krypton.lem0n.zapto.org"
+        "lem0n.zapto.org"
       ];
       "192.168.1.46" = [
         "palladium"
