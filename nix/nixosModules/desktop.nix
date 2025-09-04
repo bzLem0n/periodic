@@ -23,6 +23,8 @@
     deluge
     neovide
 
+    lan-mouse_git
+
     kdePackages.ark
     kdePackages.discover
     kdePackages.filelight
@@ -50,6 +52,7 @@
     kdePackages.ffmpegthumbs
     libdbusmenu-gtk2
     libdbusmenu-gtk3
+    appmenu-gtk3-module
   ];
 
   nixpkgs.config.permittedInsecurePackages = [ "imagemagick-6.9.12-68" ];
