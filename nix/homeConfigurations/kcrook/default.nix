@@ -14,6 +14,7 @@
 
     inputs.nix-index-database.hmModules.nix-index
     inputs.stylix.homeManagerModules.stylix
+    inputs.chaotic.homeManagerModules.default
     { programs.nix-index-database.comma.enable = true; }
   ];
 }
