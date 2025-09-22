@@ -7,11 +7,6 @@
         content = {
           type = "gpt";
           partitions = {
-            "boot" = {
-              size = "1M";
-              type = "EF02";
-              priority = 1;
-            };
             "esp" = {
               size = "2G";
               type = "EF00";
@@ -28,36 +23,36 @@
                 name = "crypted";
                 settings.allowDiscards = true;
                 content = {
-                  type = "btrfs";
-                  subvolumes = {
-                    "/root" = {
-                      mountpoint = "/";
-                      mountOptions = [
-                        "compress=zstd"
-                        "noatime"
-                      ];
-                    };
-                    "/home" = {
-                      mountpoint = "/home";
-                      mountOptions = [
-                        "compress=zstd"
-                        "noatime"
-                      ];
-                    };
-                    "/nix" = {
-                      mountpoint = "/nix";
-                      mountOptions = [
-                        "compress=zstd"
-                        "noatime"
-                      ];
-                    };
-                    "/swap" = {
-                      mountpoint = "/swap";
-                      swap.swapfile.size = "6G";
-                    };
-                  };
+                  type = "lvm_pv";
+                  vg = "palladium-uas";
                 };
               };
+            };
+          };
+        };
+      };
+    };
+    lvm_vg = {
+      "palladium-uas" = {
+        type = "lvm_vg";
+        lvs = {
+          root = {
+            size = "100%";
+            content = {
+              type = "filesystem";
+              format = "ext4";
+              mountpoint = "/";
+              mountOptions = [
+                "defaults" "relatime" "discard"
+              ];
+            };
+          };
+          swap = {
+            size = "6G";
+            content = {
+              type = "swap";
+              discardPolicy = "both";
+              resumeDevice = true;
             };
           };
         };
