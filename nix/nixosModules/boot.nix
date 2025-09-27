@@ -15,4 +15,6 @@
     initrd.systemd.enable = true;
     kernelPackages = lib.mkDefault pkgs.linuxPackages_cachyos-gcc;
   };
+
+  services.scx.enable = lib.mkDefault true;
 }

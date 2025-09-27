@@ -10,6 +10,8 @@
     steam-run
   ];
 
+  jovian.steam.eanble = true;
+
   programs = {
     gamescope = {
       enable = true;
@@ -23,7 +25,7 @@
         mangohud
       ];
       extraCompatPackages = with pkgs; [
-        proton-ge-bin
+        proton-ge-custom
       ];
     };
   };
