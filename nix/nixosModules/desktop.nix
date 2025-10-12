@@ -55,8 +55,6 @@
     appmenu-gtk3-module
   ];
 
-  chaotic.appmenu-gtk3-module.enable = true;
-
   nixpkgs.config.permittedInsecurePackages = [ "imagemagick-6.9.12-68" ];
 
   fonts.packages = with pkgs; [
