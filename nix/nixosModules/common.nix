@@ -17,8 +17,6 @@
 
     inputs.nix-index-database.nixosModules.nix-index
     inputs.stylix.nixosModules.stylix
-    inputs.jovian.nixosModules.default
-    inputs.chaotic.nixosModules.default
   ];
 
   programs.nix-index.enable = true;

@@ -67,6 +67,7 @@
         "type": "github"
       }
     },
+<<<<<<< HEAD
     "chaotic": {
       "inputs": {
         "flake-schemas": "flake-schemas",
@@ -90,6 +91,8 @@
         "type": "github"
       }
     },
+=======
+>>>>>>> parent of 4c4730b (feat(flake): Add chaotic-nyx input)
     "disko": {
       "inputs": {
         "nixpkgs": [
@@ -140,20 +143,6 @@
         "owner": "edolstra",
         "repo": "flake-compat",
         "type": "github"
-      }
-    },
-    "flake-schemas": {
-      "locked": {
-        "lastModified": 1721999734,
-        "narHash": "sha256-G5CxYeJVm4lcEtaO87LKzOsVnWeTcHGKbKxNamNWgOw=",
-        "rev": "0a5c42297d870156d9c57d8f99e476b738dcd982",
-        "revCount": 75,
-        "type": "tarball",
-        "url": "https://api.flakehub.com/f/pinned/DeterminateSystems/flake-schemas/0.1.5/0190ef2f-61e0-794b-ba14-e82f225e55e6/source.tar.gz"
-      },
-      "original": {
-        "type": "tarball",
-        "url": "https://flakehub.com/f/DeterminateSystems/flake-schemas/%3D0.1.5.tar.gz"
       }
     },
     "flake-utils": {
@@ -281,6 +270,7 @@
     "home-manager": {
       "inputs": {
         "nixpkgs": [
+<<<<<<< HEAD
           "chaotic",
           "nixpkgs"
         ]
@@ -302,6 +292,8 @@
     "home-manager_2": {
       "inputs": {
         "nixpkgs": [
+=======
+>>>>>>> parent of 4c4730b (feat(flake): Add chaotic-nyx input)
           "nixpkgs"
         ]
       },
@@ -319,6 +311,7 @@
         "type": "github"
       }
     },
+<<<<<<< HEAD
     "jovian": {
       "inputs": {
         "nix-github-actions": "nix-github-actions",
@@ -364,6 +357,8 @@
         "type": "github"
       }
     },
+=======
+>>>>>>> parent of 4c4730b (feat(flake): Add chaotic-nyx input)
     "nix-index-database": {
       "inputs": {
         "nixpkgs": [
@@ -386,6 +381,7 @@
     },
     "nixpkgs": {
       "locked": {
+<<<<<<< HEAD
         "lastModified": 1759831965,
         "narHash": "sha256-vgPm2xjOmKdZ0xKA6yLXPJpjOtQPHfaZDRtH+47XEBo=",
         "owner": "NixOS",
@@ -404,6 +400,10 @@
       "locked": {
         "lastModified": 1760038930,
         "narHash": "sha256-Oncbh0UmHjSlxO7ErQDM3KM0A5/Znfofj2BSzlHLeVw=",
+=======
+        "lastModified": 1756386758,
+        "narHash": "sha256-1wxxznpW2CKvI9VdniaUnTT2Os6rdRJcRUf65ZK9OtE=",
+>>>>>>> parent of 4c4730b (feat(flake): Add chaotic-nyx input)
         "owner": "NixOS",
         "repo": "nixpkgs",
         "rev": "0b4defa2584313f3b781240b29d61f6f9f7e0df3",
@@ -418,20 +418,16 @@
     },
     "root": {
       "inputs": {
-        "chaotic": "chaotic",
         "disko": "disko",
         "flakelight": "flakelight",
-        "home-manager": "home-manager_2",
-        "jovian": [
-          "chaotic",
-          "jovian"
-        ],
+        "home-manager": "home-manager",
         "nix-index-database": "nix-index-database",
-        "nixpkgs": "nixpkgs_2",
+        "nixpkgs": "nixpkgs",
         "stylix": "stylix",
         "systems": "systems"
       }
     },
+<<<<<<< HEAD
     "rust-overlay": {
       "inputs": {
         "nixpkgs": [
@@ -453,6 +449,8 @@
         "type": "github"
       }
     },
+=======
+>>>>>>> parent of 4c4730b (feat(flake): Add chaotic-nyx input)
     "stylix": {
       "inputs": {
         "base16": "base16",
