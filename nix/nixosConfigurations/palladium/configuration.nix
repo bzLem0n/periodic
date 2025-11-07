@@ -9,12 +9,7 @@
   boot = {
     supportedFilesystems = [ "btrfs" ];
     kernelParams = [ "mitigations=off" ];
-    loader.grub = {
-      enable = true;
-      efiSupport = true;
-      efiInstallAsRemovable = true;
-      devices = [ "nodev" ];
-    };
+    loader.limine.efiInstallAsRemovable = true;
   };
 
   networking = {

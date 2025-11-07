@@ -8,12 +8,7 @@
 {
   boot = {
     supportedFilesystems = [ "btrfs" "zfs" ];
-    loader.grub = {
-      enable = true;
-      efiSupport = true;
-      efiInstallAsRemovable = true;
-      devices = [ "nodev" ];
-    };
+    loader.limine.efiInstallAsRemovable = true;
   };
 
   networking = {

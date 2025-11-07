@@ -2,6 +2,7 @@
   system = "x86_64-linux";
 
   modules = [
+    inputs.self.nixosModules.limine
     inputs.self.nixosModules.common
     inputs.self.nixosModules.desktop
     inputs.self.nixosModules.amdgpu

@@ -6,16 +6,6 @@
   ...
 }:
 {
-  boot = {
-    loader.efi.canTouchEfiVariables = true;
-    supportedFilesystems = [ "zfs" ];
-    loader.grub = {
-      enable = true;
-      efiSupport = true;
-      zfsSupport = true;
-    };
-  };
-
   networking = {
     hostName = "krypton";
     hostId = "158b2654";

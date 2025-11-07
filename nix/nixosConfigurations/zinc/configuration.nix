@@ -6,15 +6,7 @@
   ...
 }:
 {
-  boot = {
-    loader.efi.canTouchEfiVariables = true;
-    supportedFilesystems = [ "zfs" ];
-    loader.grub = {
-      enable = true;
-      efiSupport = true;
-      zfsSupport = true;
-    };
-  };
+  boot.supportedFilesystems = [ "zfs" ];
 
   networking = {
     hostName = "zinc";
