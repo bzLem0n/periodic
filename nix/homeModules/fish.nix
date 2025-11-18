@@ -43,7 +43,7 @@
       diff = "difft";
       dufl = "duf -only local";
       dust = "dust --reverse --ignore_hidden --limit-filesystem";
-      less = "moar";
+      less = "moor";
       lsblk = "grc lsblk --tree=NAME --output=NAME,MOUNTPOINTS,PARTLABEL,SIZE,TYPE,ROTA,RM,MODEL";
       swapon = "swapon --show=NAME,LABEL,TYPE,SIZE,USED,PRIO";
       nvim = "nvim --clean";

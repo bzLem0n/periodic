@@ -8,7 +8,7 @@
   home = {
     sessionVariables = {
       EDITOR = "nvim";
-      PAGER = "moar -quit-if-one-screen";
+      PAGER = "moor -quit-if-one-screen";
     };
 
     packages = with pkgs; [
@@ -28,7 +28,7 @@
       gptfdisk
       grc
       lrzip
-      moar
+      moor
       mtr
       nethack
       nfs-utils
