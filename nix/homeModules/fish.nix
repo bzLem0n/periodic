@@ -16,6 +16,10 @@
 
     plugins = [
       {
+        name = "bang-bang";
+        src = pkgs.fishPlugins.bang-bang.src;
+      }
+      {
         name = "colored-man-pages";
         src = pkgs.fishPlugins.colored-man-pages.src;
       }
@@ -62,38 +66,6 @@
       lr = "eza --tree --no-quotes --icons=auto --color=auto";
       lsz = "eza --long --sort=size --total-size --no-permissions --no-time --no-user --no-quotes --icons=auto --color=auto";
       ltm = "eza --long --sort=time --time-style=relative --no-permissions --no-filesize --no-user --no-quotes --icons=auto --color=auto";
-    };
-
-    functions = {
-      bind_bang = {
-        body = ''
-          switch (commandline -t)[-1]
-            case "!"
-              commandline -t -- $history[1]
-              commandline -f repaint
-            case "*"
-              commandline -i !
-            end
-        '';
-      };
-
-      bind_dollar = {
-        body = ''
-          switch (commandline -t)[-1]
-            case "!"
-              commandline -f backward-delete-char history-token-search-backward
-            case "*"
-              commandline -i '$'
-          end
-        '';
-      };
-
-      fish_user_key_bindings = {
-        body = ''
-          bind ! bind_bang
-          bind '$' bind_dollar
-        '';
-      };
     };
   };
 }
