@@ -5,10 +5,17 @@
   ...
 }:
 {
-  programs.git = {
-    enable = true;
-    difftastic.enable = true;
-    userEmail = "kevinwaynecrook@gmail.com";
-    userName = "Kevin Crook";
+  programs = {
+    difftastic = {
+      enable = true;
+      git.enable = true;
+    };
+    git = {
+      enable = true;
+      settings.user = {
+        email = "kevinwaynecrook@gmail.com";
+        name = "Kevin Crook";
+      };
+    };
   };
 }
