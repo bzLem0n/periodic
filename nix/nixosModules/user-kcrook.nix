@@ -34,7 +34,6 @@
     isNormalUser = true;
     description = "Kevin Crook";
     extraGroups = [
-      "adbusers"
       "docker"
       "podman"
       "libvirtd"
