@@ -90,6 +90,9 @@
     firefox = {
       enable = true;
       languagePacks = [ "en-CA" ];
+      preferences = {
+        "widget.use-xdg-desktop-portal.file-picker" = 1;
+      };
     };
   };
 
