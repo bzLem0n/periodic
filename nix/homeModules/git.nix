@@ -16,6 +16,7 @@
         email = "kevinwaynecrook@gmail.com";
         name = "Kevin Crook";
       };
+      signing.format = null;
     };
   };
 }
