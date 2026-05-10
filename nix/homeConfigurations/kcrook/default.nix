@@ -8,6 +8,7 @@
     inputs.self.homeModules.fish
     inputs.self.homeModules.tmux
     inputs.self.homeModules.neovim
+    inputs.self.homeModules.helix
     inputs.self.homeModules.nix
     inputs.self.homeModules.git
     inputs.self.homeModules.theme
