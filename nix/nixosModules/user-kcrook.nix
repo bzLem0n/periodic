@@ -17,6 +17,7 @@
         inputs.self.homeModules.fish
         inputs.self.homeModules.tmux
         inputs.self.homeModules.neovim
+        inputs.self.homeModules.helix
         inputs.self.homeModules.git
         ../homeModules/desktop.nix
 
