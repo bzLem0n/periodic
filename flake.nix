@@ -26,7 +26,6 @@
 
     stylix = {
       url = "github:nix-community/stylix";
-      inputs.home-manager.follows = "nixpkgs";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.systems.follows = "systems";
     };
