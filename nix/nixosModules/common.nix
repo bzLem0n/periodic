@@ -8,7 +8,6 @@
 {
   imports = [
     inputs.self.nixosModules.boot
-    inputs.self.nixosModules.kmscon
     inputs.self.nixosModules.locale
     inputs.self.nixosModules.neovim
     inputs.self.nixosModules.network

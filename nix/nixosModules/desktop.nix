@@ -6,7 +6,10 @@
   ...
 }:
 {
-  imports = [ inputs.self.nixosModules.sound ];
+  imports = [
+    inputs.self.nixosModules.sound
+    inputs.self.nixosModules.kmscon
+  ];
 
   environment.plasma6.excludePackages = with pkgs; [
     pkgs.kdePackages.khelpcenter
