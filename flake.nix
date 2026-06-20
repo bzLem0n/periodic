@@ -2,7 +2,8 @@
   description = "NixOS and Home Manager flake using flakelight";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    #nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs.url = "https://channels.nixos.org/nixos-unstable/nixexprs.tar.xz";
 
     flakelight = {
       url = "github:nix-community/flakelight";
