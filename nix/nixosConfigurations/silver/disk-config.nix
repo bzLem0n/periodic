@@ -53,6 +53,24 @@
           };
         };
       };
+
+      "sata-hdd2" = {
+        type = "disk";
+        device = "/dev/disk/by-id/ata-WDC_WD30EZRX-00D8PB0_WD-WCC4N2UVUEFF";
+        content = {
+          type = "gpt";
+          partitions = {
+            "pool" = {
+              size = "100%";
+              content = {
+                type = "filesystem";
+                format = "ext4";
+                mountpoint = "/mnt/pool";
+              };
+            };
+          };
+        };
+      };
     };
 
     zpool = {
