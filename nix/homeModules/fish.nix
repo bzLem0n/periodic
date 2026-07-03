@@ -63,9 +63,12 @@
       ll = "eza --long --time-style=relative --no-quotes --icons=auto --color=auto";
       la = "eza --all --all --no-quotes --icons=auto --color=auto";
       lla = "eza --all --all --long --time-style=relative --no-quotes --icons=auto --color=auto";
-      ld = "eza --only-dirs --no-quotes --icons=auto --color=auto";
+      ldir = "eza --only-dirs --no-quotes --icons=auto --color=auto";
       lf = "eza --only-files --no-quotes --icons=auto --color=auto";
       lr = "eza --tree --no-quotes --icons=auto --color=auto";
+      lrdir = "eza --tree --only-dirs --no-quotes --icons=auto --color=auto";
+      lr2 = "eza --tree --level 2 --no-quotes --icons=auto --color=auto";
+      lr3 = "eza --tree --level 3 --no-quotes --icons=auto --color=auto";
       lsz = "eza --long --sort=size --total-size --no-permissions --no-time --no-user --no-quotes --icons=auto --color=auto";
       ltm = "eza --long --sort=time --time-style=relative --no-permissions --no-filesize --no-user --no-quotes --icons=auto --color=auto";
     };
