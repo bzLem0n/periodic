@@ -21,6 +21,7 @@
       dust
       efibootmgr
       eza
+      fd
       file
       fzf
       glow
