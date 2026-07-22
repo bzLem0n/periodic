@@ -17,7 +17,7 @@
         true-color = true;
         completion-replace = true;
         trim-trailing-whitespace = true;
-        end-of-line-diagnostics = true;
+        end-of-line-diagnostics = "hint";
         color-modes = true;
         soft-wrap.enable = true;
         cursor-shape = {
