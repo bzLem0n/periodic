@@ -13,6 +13,7 @@ OPTIONS=horsename:Shadow
 OPTIONS=fruit:potato
 
 # Basic options.
+OPTIONS=!tutorial
 OPTIONS=autodig
 OPTIONS=!autoquiver
 OPTIONS=boulder:0
