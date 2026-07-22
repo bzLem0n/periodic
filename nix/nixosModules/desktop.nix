@@ -29,7 +29,7 @@
     kdePackages.ark
     kdePackages.discover
     kdePackages.filelight
-    kdePackages.kate
+    kdePackages.kate nil marksman lua-language-server
     kdePackages.kcalc
     kdePackages.kcharselect
     kdePackages.kcolorchooser
