@@ -1,9 +1,9 @@
 # Personal preferences.
 OPTIONS=name:bzLem0n
-OPTIONS=race:human
-OPTIONS=role:monk
-OPTIONS=gender:male
-OPTIONS=align:neutral
+#OPTIONS=race:human
+#OPTIONS=role:monk
+#OPTIONS=gender:male
+#OPTIONS=align:neutral
 OPTIONS=pettype:none
 
 # Flavor options.
