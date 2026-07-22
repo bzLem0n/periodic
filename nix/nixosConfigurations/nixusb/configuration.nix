@@ -7,7 +7,10 @@
 }:
 {
   boot = {
-    supportedFilesystems = [ "btrfs" "zfs" ];
+    supportedFilesystems = [
+      "btrfs"
+      "zfs"
+    ];
     loader.limine.efiInstallAsRemovable = true;
   };
 

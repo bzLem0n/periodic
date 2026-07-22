@@ -24,7 +24,7 @@
     };
     targets.kde.enable = false;
 
-# Work aroud a bug in stylix
+    # Work aroud a bug in stylix
     targets.mako.enable = false;
   };
 }

@@ -1,9 +1,11 @@
-{ inputs
-, config
-, lib
-, pkgs
-, ...
-}: {
+{
+  inputs,
+  config,
+  lib,
+  pkgs,
+  ...
+}:
+{
   networking = {
     hostName = "silver";
     hostId = "c4183603";

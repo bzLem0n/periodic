@@ -43,7 +43,9 @@
               format = "ext4";
               mountpoint = "/";
               mountOptions = [
-                "defaults" "relatime" "discard"
+                "defaults"
+                "relatime"
+                "discard"
               ];
             };
           };

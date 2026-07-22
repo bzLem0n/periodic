@@ -29,7 +29,10 @@
     kdePackages.ark
     kdePackages.discover
     kdePackages.filelight
-    kdePackages.kate nil marksman lua-language-server
+    kdePackages.kate
+    nil
+    marksman
+    lua-language-server
     kdePackages.kcalc
     kdePackages.kcharselect
     kdePackages.kcolorchooser
@@ -74,7 +77,7 @@
           Enable = "Source,Sink,Media,Socket";
           Privacy = "device";
           JustWorksRepairing = "always";
-#          Class = "0x000100";
+          #          Class = "0x000100";
           FastConnectable = "true";
         };
       };
