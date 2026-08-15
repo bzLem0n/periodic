@@ -54,7 +54,6 @@
 
     ffmpegthumbnailer
     kdePackages.ffmpegthumbs
-    libdbusmenu-gtk2
     libdbusmenu-gtk3
   ];
 
