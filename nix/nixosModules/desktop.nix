@@ -42,7 +42,7 @@
     krename
     krita
     lxqt.lximage-qt
-    vlc
+    haruna
     xscreensaver
 
     libreoffice-qt
