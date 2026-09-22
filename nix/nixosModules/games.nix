@@ -8,6 +8,7 @@
 {
   environment.systemPackages = with pkgs; [
     steam-run
+    ryubing # Switch emulator
   ];
 
   programs = {
