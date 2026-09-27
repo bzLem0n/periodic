@@ -23,7 +23,6 @@
 
   environment.systemPackages = with pkgs; [
     #    calibre
-    deluge
     neovide
 
     kdePackages.ark
@@ -43,6 +42,7 @@
     krita
     lxqt.lximage-qt
     haruna
+    ktorrent
     xscreensaver
 
     libreoffice-qt
