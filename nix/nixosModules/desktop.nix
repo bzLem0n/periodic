@@ -37,12 +37,12 @@
     kdePackages.kcolorchooser
     kdePackages.konversation
     kdePackages.krdc
+    kdePackages.ktorrent
     kdePackages.okular
     krename
     krita
     lxqt.lximage-qt
     haruna
-    ktorrent
     xscreensaver
 
     libreoffice-qt
