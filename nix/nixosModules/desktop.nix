@@ -43,7 +43,6 @@
     krita
     lxqt.lximage-qt
     haruna
-    svp
     xscreensaver
 
     libreoffice-qt
