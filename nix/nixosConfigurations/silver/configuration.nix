@@ -23,5 +23,7 @@
     trim.enable = true;
   };
 
+  hardware.amdgpu.opencl.enable = true;
+
   system.stateVersion = "25.05";
 }
