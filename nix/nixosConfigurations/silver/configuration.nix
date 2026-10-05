@@ -25,5 +25,7 @@
 
   hardware.amdgpu.opencl.enable = true;
 
+  nixpkgs.config.rocmSupport = true;
+
   system.stateVersion = "25.05";
 }
