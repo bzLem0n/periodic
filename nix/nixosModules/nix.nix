@@ -22,11 +22,11 @@
   };
 
   nix = {
-    settings.experimental-features = [
-      "nix-command"
-      "flakes"
-    ];
     settings = {
+      experimental-features = [
+        "nix-command"
+        "flakes"
+      ];
       substituters = [
         "http://192.168.1.36/"
         "https://nix-community.cachix.org/"
