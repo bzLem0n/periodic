@@ -22,10 +22,15 @@
   };
 
   nix = {
-    registry."periodic".to = {
-      owner = "codeberg.org";
-      repo = "bzLem0n/Periodic";
-      type = "git+https";
+    registry.periodic = {
+      from = {
+        id = "periodic";
+        type = "indirect";
+      };
+      to = {
+        url = "https://codeberg.org/bzLem0n/periodic";
+        type = "git";
+      };
     };
 
     settings = {
