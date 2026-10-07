@@ -14,7 +14,7 @@
     inputs.self.homeModules.theme
 
     inputs.nix-index-database.homeModules.nix-index
-    inputs.stylix.homeManagerModules.stylix
+    inputs.stylix.homeModules.stylix
     { programs.nix-index-database.comma.enable = true; }
   ];
 }

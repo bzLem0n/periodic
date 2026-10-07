@@ -22,4 +22,7 @@
   programs.nix-index.enable = true;
 
   services.userborn.enable = true;
+
+  # Silence annoying warning
+  boot.zfs.forceImportRoot = lib.mkDefault false;
 }
