@@ -12,7 +12,6 @@
     };
 
     packages = with pkgs; [
-      alejandra
       btop
       cifs-utils
       curl
@@ -33,7 +32,6 @@
       mtr
       nethack
       nfs-utils
-      nixfmt-tree
       nix-output-monitor
       p7zip
       pciutils
