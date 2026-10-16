@@ -56,6 +56,8 @@
     ffmpegthumbnailer
     kdePackages.ffmpegthumbs
     libdbusmenu-gtk3
+
+    wl-clipboard
   ];
 
   nixpkgs.config.permittedInsecurePackages = [ "imagemagick-6.9.12-68" ];
@@ -90,6 +92,7 @@
   };
 
   programs = {
+    droidcam.enablle = true;
     kdeconnect.enable = true;
     virt-manager.enable = true;
 
@@ -124,6 +127,8 @@
       openFirewall = true;
     };
   };
+
+  virtualisation.waydroid.enable = true;
 
   xdg = {
     menus.enable = true;
