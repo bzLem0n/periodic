@@ -27,6 +27,7 @@
   };
 
   environment.systemPackages = with pkgs; [
+    distrobox
     docker-compose
     dive # look into docker image layers
     podman
