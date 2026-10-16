@@ -92,7 +92,7 @@
   };
 
   programs = {
-    droidcam.enablle = true;
+    droidcam.enable = true;
     kdeconnect.enable = true;
     virt-manager.enable = true;
 
