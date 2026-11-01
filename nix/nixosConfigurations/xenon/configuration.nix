@@ -7,24 +7,8 @@
 }:
 {
   boot = {
-    loader.efi.canTouchEfiVariables = true;
     supportedFilesystems = [ "zfs" ];
     zfs.extraPools = [ "zhdd" ];
-    loader.grub = {
-      enable = true;
-      efiSupport = true;
-      zfsSupport = true;
-      mirroredBoots = [
-        {
-          devices = [ "/dev/disk/by-id/ata-Samsung_SSD_850_EVO_500GB_S2RANXAH180187P" ];
-          path = "/boot";
-        }
-        {
-          devices = [ "/dev/disk/by-id/nvme-WDS500G2X0C-00L350_183055423956" ];
-          path = "/boot-fallback";
-        }
-      ];
-    };
   };
 
   networking = {
