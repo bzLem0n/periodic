@@ -75,6 +75,7 @@
           nixfmt-tree
           markdownlint-cli2
           git
+          just
         ];
 
       formatters = {
