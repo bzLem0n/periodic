@@ -34,7 +34,7 @@ Personal Home-Manager and NixOS configurations for the devices on the
   /tmp/disk-config.nix
   ```
 
-* Generate a hardware-configuration.nix for the system, copy it
+* Generate a hardware-configuration.nix for the system.
 
   ```bash
   sudo nixos-generate-config --no-filesystems --root /mnt
