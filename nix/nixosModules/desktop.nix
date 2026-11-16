@@ -58,6 +58,8 @@
     libdbusmenu-gtk3
 
     wl-clipboard
+
+    (bottles.override { removeWarningPopup = true; })
   ];
 
   nixpkgs.config.permittedInsecurePackages = [ "imagemagick-6.9.12-68" ];
