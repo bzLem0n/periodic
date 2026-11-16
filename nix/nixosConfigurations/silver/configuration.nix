@@ -6,8 +6,6 @@
   ...
 }:
 {
-  boot.kernelPackages = pkgs.linuxPackages_latest;
-
   networking = {
     hostName = "silver";
     hostId = "c4183603";
