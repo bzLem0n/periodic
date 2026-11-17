@@ -19,10 +19,14 @@ update:
   nix --option commit-lockfile-summary "chore: update flake.lock" flake update --commit-lock-file
 
 
-# Update localhost
+# Clean nix storre
 [group('localhost')]
-clean:
-  nh clean all
+[group('remote host')]
+clean hostname="":
+  {{ if hostname == "" { "nh clean all" } \
+    else \
+    { "ssh -t " + hostname + " \"nh clean all\"" } \
+  }}
 
 # List generations availble in the nix store
 [group('localhost')]
