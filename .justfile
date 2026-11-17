@@ -35,5 +35,14 @@ history:
 upgrade hostname="":
   {{ if hostname == "" { "nh os boot" } \
     else \
-    { "nh os boot --target-host kcrook@" + quote(hostname) + " .#" + quote(hostname) } \
+    { "nh os boot --target-host kcrook@" + hostname + " .#" + hostname } \
+  }}
+
+# Reboot a host
+[group('localhost')]
+[group('remote host')]
+reboot hostname="":
+  {{ if hostname == "" { "sudo reboot" } \
+    else \
+    { "ssh -t " + hostname + " \"sudo reboot\"" } \
   }}
