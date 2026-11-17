@@ -43,7 +43,13 @@
     krita
     lxqt.lximage-qt
     haruna
-    mpv
+    (mpv.override {
+      scripts = [
+        mpvScripts.chapterskip
+        mpvScripts.modernz
+        mpvScripts.mpris
+      ];
+    })
     xscreensaver
 
     libreoffice-qt
